@@ -1,0 +1,4583 @@
+requirement,Component,Shape,Dimension,Color,Functionality,Domain,probable zone,css,type,Zone
+Provide a volume slider for audio control,slider,rectangular,30x400,grey,"Selection, Adjustment","Industry, Automotive, consumer electrnoics",navigation_zone,"{
+  ""sliderWrapper"": {
+    ""width"": ""400px"",
+    ""height"": ""30px"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center"",
+    ""backgroundColor"": ""white""
+  },
+  ""sliderTrack"": {
+    ""width"": ""100%"",
+    ""height"": ""6px"",
+    ""backgroundColor"": ""lightgray"",
+    ""borderRadius"": ""3px"",
+    ""position"": ""relative""
+  },
+  ""sliderThumb"": {
+    ""width"": ""20px"",
+    ""height"": ""20px"",
+    ""backgroundColor"": ""black"",
+    ""borderRadius"": ""50%"",
+    ""position"": ""absolute"",
+    ""top"": ""-7px"",
+    ""left"": ""50%"",
+    ""transform"": ""translateX(-50%)"",
+    ""cursor"": ""pointer""
+  }
+}",slider_icon.png,
+System shall ensure display a progress bar for file uploads,File Upload,rectangular,20x400,grey,"Selection, drag and drop, size validation, uploading, storage","Industry, Automotive, consumer electrnoics",main_content_zone,"{
+  ""uploadIconWrapper"": {
+    ""width"": ""100px"",
+    ""height"": ""100px"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center"",
+    ""backgroundColor"": ""white""
+  },
+  ""uploadIcon"": {
+    ""width"": ""50px"",
+    ""height"": ""50px"",
+    ""border"": ""2px solid black"",
+    ""borderTop"": ""none"",
+    ""borderRadius"": ""0 0 5px 5px"",
+    ""position"": ""relative"",
+    ""boxSizing"": ""border-box""
+  },
+  ""arrowUp"": {
+    ""width"": ""0"",
+    ""height"": ""0"",
+    ""borderLeft"": ""15px solid transparent"",
+    ""borderRight"": ""15px solid transparent"",
+    ""borderBottom"": ""25px solid black"",
+    ""position"": ""absolute"",
+    ""top"": ""-25px"",
+    ""left"": ""10px""
+  }
+}",File Upload_icon.png,
+Show a calendar for date selection.,Drop Down,rectangular,500x500,grey,"forms, filters, settings, and menus.","Industry, Automotive, consumer electrnoics",main_content_zone,"{
+  ""dropdown"": {
+    ""width"": ""500px"",
+    ""height"": ""50px"",
+    ""border"": ""1px solid gray"",
+    ""borderRadius"": ""4px"",
+    ""backgroundColor"": ""white"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""space-between"",
+    ""padding"": ""0 10px"",
+    ""boxShadow"": ""0 0 3px rgba(0, 0, 0, 0.2)""
+  },
+  ""dropdownText"": {
+    ""flex"": ""1"",
+    ""fontSize"": ""16px"",
+    ""color"": ""black""
+  },
+  ""dropdownIcon"": {
+    ""width"": ""50px"",
+    ""height"": ""100%"",
+    ""backgroundColor"": ""lightgray"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center"",
+    ""borderLeft"": ""1px solid gray"",
+    ""cursor"": ""pointer""
+  },
+  ""icon"": {
+    ""fontSize"": ""24px"",
+    ""color"": ""black"",
+    ""transform"": ""rotate(0deg)""
+  }
+}",Drop Down_icon.png,
+Provide a password input field,Text Field,rectangular,50x400,blue,"login screens, search bars, and forms.","Industry, Automotive, consumer electrnoics",main_content_zone,"{
+  ""textFieldWrapper"": {
+    ""width"": ""300px"",
+    ""height"": ""40px"",
+    ""border"": ""2px solid black"",
+    ""borderRadius"": ""4px"",
+    ""backgroundColor"": ""white"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""paddingLeft"": ""10px"",
+    ""fontSize"": ""16px"",
+    ""color"": ""black"",
+    ""position"": ""relative""
+  },
+  ""textCursor"": {
+    ""width"": ""2px"",
+    ""height"": ""70%"",
+    ""backgroundColor"": ""black"",
+    ""position"": ""absolute"",
+    ""left"": ""12px"",
+    ""animation"": ""blink 1s step-start 0s infinite""
+  },
+  ""@keyframes blink"": {
+    ""0%"": { ""opacity"": ""1"" },
+    ""50%"": { ""opacity"": ""0"" },
+    ""100%"": { ""opacity"": ""1"" }
+  }
+}",Text Field_icon.png,
+The system shall display a customizable logo/avatar for user identification.,Logo/Avatar,Square,100x100,black,"branding, profile pages, and dashboards.","Industry, Automotive, consumer electrnoics",header_zone,"{
+  ""avatar-container"": {
+    ""position"": ""relative"",
+    ""width"": ""100px"",
+    ""height"": ""100px"",
+    ""border"": ""4px solid black"",
+    ""borderRadius"": ""50%"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center"",
+    ""boxSizing"": ""border-box""
+  },
+  ""avatar-head"": {
+    ""position"": ""absolute"",
+    ""top"": ""20px"",
+    ""width"": ""30px"",
+    ""height"": ""30px"",
+    ""backgroundColor"": ""black"",
+    ""borderRadius"": ""50%""
+  },
+  ""avatar-body"": {
+    ""position"": ""absolute"",
+    ""top"": ""50px"",
+    ""width"": ""40px"",
+    ""height"": ""30px"",
+    ""borderTop"": ""4px solid black"",
+    ""borderLeft"": ""4px solid black"",
+    ""borderRight"": ""4px solid black"",
+    ""borderBottom"": ""none"",
+    ""borderRadius"": ""20px 20px 0 0""
+  }
+}",Logo/Avatar_icon.png,
+The system shall display a temporary toast notification with contextual information.,Toast bar,rectangular,240x164,black,quick notifications and confirmations,"Industry, Automotive, consumer electrnoics",header_zone,,Toast bar_icon.png,
+The snack bar shall provide user feedback with an option to include an action button.,Snack bar,rectangular,240x48,black,"warnings, alerts, and success messages","Industry, Automotive, consumer electrnoics",header_zone,,Snack bar_icon.png,
+The system shall display a pop-up for critical alerts that require user action.,pop-up,rectangular,400x300,black,"modals, login prompts, and alerts","Industry, Automotive, consumer electrnoics",header_zone,,pop-up_icon.png,
+The system shall support user input forms with validation and submission feedback.,form,rectangular,400x600,blue,"data input, sign-up, and checkout.","Industry, Automotive, consumer electrnoics",main_content_zone,,form_icon.png,
+The system shall provide visual indicators for real-time status updates.,indicator,Square,200x200,black,"status updates (e.g., online/offline)","Industry, Automotive, consumer electrnoics",main_content_zone,,indicator_icon.png,
+content should be grouped in rectangular sections for better organization.,video,rectangular,400x600,black,"media players, tutorials, and marketing","Industry, Automotive, consumer electrnoics",main_content_zone,".video-component {
+  width: 400px;
+  height: 300px;
+  border: 4px solid black; /* Outer video frame */
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Top clapboard bar */
+.video-component .clapboard {
+  width: 100%;
+  height: 50px;
+  background-color: lightgray;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Diagonal lines on the clapboard */
+.video-component .clapboard div {
+  width: 30px;
+  height: 100%;
+  background-color: black;
+  clip-path: polygon(0 0, 100% 0, 0% 100%, 0 100%);
+}
+
+/* Play button */
+.video-component .play-button {
+  width: 0;
+  height: 0;
+  border-left: 40px solid black;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  position: absolute;
+}",video_icon.png,
+The system shall present items in a structured list format with selectable elements.,list,rectangular,50x150,grey,"task lists, messaging, and navigation","Industry, Automotive, consumer electrnoics",main_content_zone,,list_icon.png,
+The navigation bar shall provide quick access to primary system functions.,Navigation bar,rectangular,60x800,grey,website/app navigation and menus,"Industry, Automotive, consumer electrnoics",navigation_zone,".hamburger {
+  width: 35px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+ 
+.hamburger div {
+  height: 6px;
+  background-color: black;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}",Navigation bar_icon.png,
+The system shall provide radio buttons for mutually exclusive selections.,Radio Button,Square,50x50,grey,"surveys, forms, and option selections","Industry, Automotive, consumer electrnoics",main_content_zone,"/* Container for the radio button */
+.radio-button {
+  width: 24px;
+  height: 24px;
+  border: 4px solid black; /* Outer ring */
+  border-radius: 50%;       /* Makes it circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;  /* Background behind inner dot */
+}
+
+/* Inner filled circle (selected state) */
+.radio-button .inner-circle {
+  width: 12px;
+  height: 12px;
+  background-color: black;  /* Inner dot color */
+  border-radius: 50%;       /* Makes it circular */
+}",Radio Button_icon.png,
+The system shall display banners for promotional or informational messages.,Banner,rectangular,800x200,black,"announcements, promotions, and ads","Industry, Automotive, consumer electrnoics",header_zone,,Banner_icon.png,
+The system shall support hierarchical menu structures for intuitive navigation.,Menu,rectangular,40x600,grey,"context menus, dropdowns, and settings","Industry, Automotive, consumer electrnoics",header_zone,".bullet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+ 
+.bullet-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+ 
+.bullet-circle {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+ 
+.bullet-bar {
+  width: 160px;
+  height: 20px;
+  background-color: black;
+  border-radius: 10px;
+}",Menu_icon.png,
+The system shall provide interactive buttons for user actions.,Button,rectangular,36x160,black,"submitting, confirming, and navigation","Industry, Automotive, consumer electrnoics",main_content_zone,,Button_icon.png,
+Icons shall visually represent system functions and actions.,Icon,Square,64x64,grey,representing actions and features,"Industry, Automotive, consumer electrnoics",header_zone,,Icon_icon.png,
+The system shall provide icon buttons for compact interactions.,Icon button,rectangular,36x200,grey,"quick actions like delete, search, etc","Industry, Automotive, consumer electrnoics",header_zone,,Icon button_icon.png,
+The system shall include a toggle switch for binary settings.,Toggle switch button,Square,24x24,grey,"settings (e.g., dark mode, Wi-Fi on/off)","Industry, Automotive, consumer electrnoics",main_content_zone,"{
+  ""toggleSwitchWrapper"": {
+    ""width"": ""50px"",
+    ""height"": ""25px"",
+    ""backgroundColor"": ""lightgray"",
+    ""borderRadius"": ""25px"",
+    ""position"": ""relative"",
+    ""cursor"": ""pointer"",
+    ""transition"": ""background-color 0.3s""
+  },
+  ""toggleSwitchKnob"": {
+    ""width"": ""23px"",
+    ""height"": ""23px"",
+    ""backgroundColor"": ""white"",
+    ""borderRadius"": ""50%"",
+    ""position"": ""absolute"",
+    ""top"": ""1px"",
+    ""left"": ""1px"",
+    ""transition"": ""left 0.3s""
+  },
+  ""toggleSwitchWrapperOn"": {
+    ""backgroundColor"": ""green""
+  },
+  ""toggleSwitchKnobOn"": {
+    ""left"": ""26px""
+  }
+}",Toggle switch button_icon.png,
+The system shall provide a link button for navigation to external content.,Link button,rectangular,24x64,grey,navigating to external/internal pages.,"Industry, Automotive, consumer electrnoics",main_content_zone,"{
+  ""component"": ""LinkButtonIcon"",
+  ""style"": {
+    ""position"": ""relative"",
+    ""width"": ""100px"",
+    ""height"": ""100px"",
+    ""borderRadius"": ""16px"",
+    ""border"": ""4px solid black"",
+    ""boxSizing"": ""border-box"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center"",
+    ""backgroundColor"": ""white""
+  },
+  ""elements"": {
+    ""arrow-line"": {
+      ""position"": ""absolute"",
+      ""width"": ""60px"",
+      ""height"": ""10px"",
+      ""backgroundColor"": ""black"",
+      ""top"": ""20px"",
+      ""left"": ""20px"",
+      ""transform"": ""rotate(45deg)"",
+      ""transformOrigin"": ""left center""
+    },
+    ""arrow-head"": {
+      ""position"": ""absolute"",
+      ""width"": ""0"",
+      ""height"": ""0"",
+      ""borderTop"": ""10px solid transparent"",
+      ""borderBottom"": ""10px solid transparent"",
+      ""borderLeft"": ""15px solid black"",
+      ""top"": ""10px"",
+      ""right"": ""10px"",
+      ""transform"": ""rotate(45deg)""
+    },
+    ""box-corner"": {
+      ""position"": ""absolute"",
+      ""width"": ""60px"",
+      ""height"": ""60px"",
+      ""border"": ""8px solid black"",
+      ""borderTop"": ""none"",
+      ""borderRight"": ""none"",
+      ""bottom"": ""0"",
+      ""left"": ""0"",
+      ""borderRadius"": ""12px""
+    }
+  }
+}",Link button_icon.png,
+The system shall support image display with scaling options.,Image,Square,172x172,black,"galleries, product listings, and banners","Industry, Automotive, consumer electrnoics",main_content_zone,".image-component {
+  width: 400px;
+  height: 300px;
+  border: 4px solid black; /* Outer frame */
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inner image frame */
+.image-component .inner-frame {
+  width: 90%;
+  height: 80%;
+  border: 2px solid black;
+  position: relative;
+  background-color: transparent;
+}
+
+/* Mountains (as triangles) */
+.image-component .mountain1,
+.image-component .mountain2 {
+  position: absolute;
+  bottom: 0;
+  border-style: solid;
+}
+
+/* Left mountain */
+.image-component .mountain1 {
+  left: 10%;
+  border-width: 0 40px 60px 40px;
+  border-color: transparent transparent black transparent;
+}
+
+/* Right mountain */
+.image-component .mountain2 {
+  left: 35%;
+  border-width: 0 50px 80px 50px;
+  border-color: transparent transparent black transparent;
+}
+
+/* Sun (circle) */
+.image-component .sun {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+}",Image_icon.png,
+The system shall allow captions for images to provide additional context.,Image with caption,rectangular,172x196,blue,"news articles, blogs, and portfolios","Industry, Automotive, consumer electrnoics",main_content_zone,".image-caption-wrapper {
+  width: 400px;
+  height: 350px; /* Reference size */
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 8px gray;
+}
+
+.caption-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid black;
+}
+
+.caption-text {
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+}",Image with caption_icon.png,
+The system shall display titles with customizable font size and style.,Title,rectangular,"(24px, bold) 24x10 ",blue,headings in sections and articles,"Industry, Automotive, consumer electrnoics",header_zone,,Title_icon.png,
+The system shall provide subtitles for additional context under titles.,Sub title,rectangular,"(16px, bold) 16x10",blue,subheadings and descriptions,"Industry, Automotive, consumer electrnoics",header_zone,,Sub title_icon.png,
+The system shall support paragraph text with formatting options.,Paragraph,rectangular,"(14px, regular) 14x10",blue,"content, descriptions, and explanations.","Industry, Automotive, consumer electrnoics",main_content_zone,"{
+  ""component"": ""ParagraphSymbol"",
+  ""style"": {
+    ""width"": ""100px"",
+    ""height"": ""100px"",
+    ""borderRadius"": ""50%"",                  // Circular shape
+    ""backgroundColor"": ""white"",             // Background behind the symbol
+    ""border"": ""2px solid black"",            // Thin black border
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center"",
+    ""fontSize"": ""48px"",                     // Prominent symbol size
+    ""fontWeight"": ""bold"",
+    ""color"": ""black"",                       // Symbol color
+    ""fontFamily"": ""Arial, sans-serif"",
+    ""boxShadow"": ""0px 4px 6px rgba(0, 0, 0, 0.1)"", // Subtle shadow
+    ""margin"": ""10px""
+  },
+  ""content"": ""�""
+}",Paragraph_icon.png,
+The system shall display a loader to indicate ongoing processing.,Loader,circular,64x64,black,"loading screens, AJAX calls, and uploads","Industry, Automotive, consumer electrnoics",main_content_zone,,Loader_icon.png,
+The system shall provide a spinner animation for background operations.,Spinner,circular,64x64,grey,processing indicators in UI elements,"Industry, Automotive, consumer electrnoics",main_content_zone,".spinner {
+  width: 100px;
+  height: 100px;
+  border: 8px solid lightgray;
+  border-top: 8px solid black;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+/* Spin Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}",Spinner_icon.png,
+The system shall display progress indicators for ongoing tasks.,Progress,rectangular,16x96,black,showing task completion status,"Industry, Automotive, consumer electrnoics",main_content_zone,".progress {
+  width: 400px;
+  height: 30px;
+  background-color: navy;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Progress Fill */
+.progress::before {
+  content: """";
+  display: block;
+  height: 100%;
+  width: 25%; /* example fill */
+  background-color: lightblue;
+}",Progress_icon.png,
+The system shall support a floating section for additional content display.,Floating aside section,rectangular,320x768,black,"side panels with filters, chat, or tools","Industry, Automotive, consumer electrnoics",navigation_zone,,Floating aside section_icon.png,
+The system shall display time using analog or digital formats.,Clock (Digital),Square,196x196 ,black,"dashboards, scheduling apps, and timers","Industry, Automotive, consumer electrnoics",header_zone,,Clock (Digital)_icon.png,
+The system shall display time using analog or digital formats.,Clock (Analog),circular,196x196 ,black,"dashboards, scheduling apps, and timers","Industry, Automotive, consumer electrnoics",header_zone,".clock {
+  width: 300px;
+  height: 300px;
+  border: 8px solid black;
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+}
+
+/* Center dot */
+.clock::before {
+  content: """";
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+/* Hour Hand */
+.clock .hour {
+  width: 6px;
+  height: 70px;
+  background-color: black;
+  position: absolute;
+  top: 80px;
+  left: 147px;
+  transform-origin: bottom center;
+  transform: rotate(0deg); /* Set dynamically */
+  z-index: 5;
+}
+
+/* Minute Hand */
+.clock .minute {
+  width: 4px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  top: 50px;
+  left: 148px;
+  transform-origin: bottom center;
+  transform: rotate(0deg); /* Set dynamically */
+  z-index: 6;
+}
+
+/* Tick marks */
+.clock .tick {
+  width: 2px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 149px;
+  transform-origin: bottom center;
+}",Clock (Analog)_icon.png,
+The system shall provide a gauge to represent real-time metrics.,Gauge,Square,150x150,black,"speedometers, fuel levels, and industrial machine performance","Industry, Automotive, consumer electrnoics",main_content_zone,".guage { 
+  position: relative; 
+  width: 250px; 
+  height: 125px; 
+  border-top-left-radius: 125px; 
+  border-top-right-radius: 125px; 
+  background-color: transparent; 
+  overflow: hidden; 
+  border: 10px solid #222; 
+  border-bottom: none; 
+  margin: 20px auto; 
+} 
+ 
+.ticks { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+} 
+ 
+.tick { 
+  position: absolute; 
+  top: 0; 
+  left: 50%; 
+  width: 6px; 
+  height: 30px; 
+  background-color: #222; 
+  transform-origin: bottom center; 
+} 
+ 
+.needle { 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  width: 4px; 
+  height: 90px; 
+  background-color: #222; 
+  transform-origin: bottom center; 
+  transition: transform 0.5s ease; 
+} 
+ 
+.center-dot { 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  width: 20px; 
+  height: 20px; 
+  background-color: #222; 
+  border-radius: 50%; 
+  transform: translate(-50%, 50%); 
+} 
+",Gauge_icon.png,
+The system shall display temperature readings using a thermometer visualization.,Thermometer Widget,rectangular,196x20,black,temperature monitoring in automotive and industrial setups.,"Industry, Automotive, consumer electrnoics",main_content_zone,"{
+  ""thermometer-container"": {
+    ""position"": ""relative"",
+    ""width"": ""20px"",
+    ""height"": ""120px"",
+    ""backgroundColor"": ""black"",
+    ""borderRadius"": ""10px"",
+    ""margin"": ""auto""
+  },
+  ""thermometer-bulb"": {
+    ""position"": ""absolute"",
+    ""bottom"": ""-30px"",
+    ""left"": ""-20px"",
+    ""width"": ""60px"",
+    ""height"": ""60px"",
+    ""backgroundColor"": ""black"",
+    ""borderRadius"": ""50%""
+  },
+  ""bar1"": {
+    ""position"": ""absolute"",
+    ""right"": ""-30px"",
+    ""top"": ""15px"",
+    ""width"": ""40px"",
+    ""height"": ""10px"",
+    ""backgroundColor"": ""black""
+  },
+  ""bar2"": {
+    ""position"": ""absolute"",
+    ""right"": ""-30px"",
+    ""top"": ""45px"",
+    ""width"": ""40px"",
+    ""height"": ""10px"",
+    ""backgroundColor"": ""black""
+  },
+  ""bar3"": {
+    ""position"": ""absolute"",
+    ""right"": ""-30px"",
+    ""top"": ""75px"",
+    ""width"": ""40px"",
+    ""height"": ""10px"",
+    ""backgroundColor"": ""black""
+  },
+  ""wave1"": {
+    ""position"": ""absolute"",
+    ""bottom"": ""-60px"",
+    ""left"": ""-40px"",
+    ""width"": ""150px"",
+    ""height"": ""20px"",
+    ""backgroundImage"": ""repeating-linear-gradient(90deg, transparent, transparent 5px, black 5px, black 15px)"",
+    ""borderBottom"": ""5px solid black"",
+    ""borderTopLeftRadius"": ""10px"",
+    ""borderTopRightRadius"": ""10px""
+  },
+  ""wave2"": {
+    ""position"": ""absolute"",
+    ""bottom"": ""-80px"",
+    ""left"": ""-40px"",
+    ""width"": ""150px"",
+    ""height"": ""20px"",
+    ""backgroundImage"": ""repeating-linear-gradient(90deg, transparent, transparent 5px, black 5px, black 15px)"",
+    ""borderBottom"": ""5px solid black"",
+    ""borderTopLeftRadius"": ""10px"",
+    ""borderTopRightRadius"": ""10px""
+  }
+}",Thermometer Widget_icon.png,
+The system shall display a real-time compass for directional guidance.,Compass,circular,172x172,black,navigation systems in automotive and marine dashboards,"Industry, Automotive, consumer electrnoics",main_content_zone,"{
+  ""compass-container"": {
+    ""position"": ""relative"",
+    ""width"": ""200px"",
+    ""height"": ""200px"",
+    ""border"": ""8px solid black"",
+    ""borderRadius"": ""50%"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center""
+  },
+  ""compass-needle"": {
+    ""position"": ""absolute"",
+    ""width"": ""4px"",
+    ""height"": ""90px"",
+    ""backgroundColor"": ""black"",
+    ""transformOrigin"": ""bottom center"",
+    ""transform"": ""rotate(0deg)""
+  },
+  ""needle-tip"": {
+    ""position"": ""absolute"",
+    ""top"": ""10px"",
+    ""left"": ""calc(50% - 8px)"",
+    ""width"": ""0"",
+    ""height"": ""0"",
+    ""borderLeft"": ""8px solid transparent"",
+    ""borderRight"": ""8px solid transparent"",
+    ""borderBottom"": ""20px solid white""
+  },
+  ""direction-n"": {
+    ""position"": ""absolute"",
+    ""top"": ""5px"",
+    ""left"": ""50%"",
+    ""transform"": ""translateX(-50%)"",
+    ""fontWeight"": ""bold""
+  },
+  ""direction-s"": {
+    ""position"": ""absolute"",
+    ""bottom"": ""5px"",
+    ""left"": ""50%"",
+    ""transform"": ""translateX(-50%)"",
+    ""fontWeight"": ""bold""
+  },
+  ""direction-e"": {
+    ""position"": ""absolute"",
+    ""top"": ""50%"",
+    ""right"": ""5px"",
+    ""transform"": ""translateY(-50%)"",
+    ""fontWeight"": ""bold""
+  },
+  ""direction-w"": {
+    ""position"": ""absolute"",
+    ""top"": ""50%"",
+    ""left"": ""5px"",
+    ""transform"": ""translateY(-50%)"",
+    ""fontWeight"": ""bold""
+  }
+}",Compass_icon.png,
+The system shall provide an interactive map for location-based services.,Map Widget,Square,400x400,grey,"vehicle GPS, delivery tracking, and industrial site maps","Industry, Automotive, consumer electrnoics",main_content_zone,"/* Container to simulate the widget */
+.map-widget {
+  width: 100px;
+  height: 140px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pin shape */
+.pin {
+  width: 100px;
+  height: 140px;
+  background-color: black;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: relative;
+  clip-path: polygon(50% 100%, 0 40%, 0 30%, 50% 0%, 100% 30%, 100% 40%);
+}
+
+/* Inner white circle */
+.pin .circle {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Car icon */
+.pin .circle .car {
+  font-size: 24px;
+  color: black;
+}",Map Widget_icon.png,
+The system shall include line separators for content organization.,Line Separator,rectangular,20x196,black,dividing sections in automotive dashboards and control panels,"Industry, Automotive, consumer electrnoics",main_content_zone,,Line Separator_icon.png,
+The system shall support card-based UI elements for structured content.,Card Widget,Square,150x150,black,"data display in analytics, vehicle performance stats","Industry, Automotive, consumer electrnoics",main_content_zone,,Card Widget_icon.png,
+The system shall provide a stepper widget to indicate progress in a multi-step process.,Stepper Widget,rectangular,196x40,black,process steps in industrial automation and e-commerce checkout flows,"Industry, Automotive, consumer electrnoics",main_content_zone,,Stepper Widget_icon.png,
+Users should be able to personalize their profile with a recognizable image or icon.,Logo/Avatar,Square,100x100,black,,,header_zone,"{
+  ""avatar-container"": {
+    ""position"": ""relative"",
+    ""width"": ""100px"",
+    ""height"": ""100px"",
+    ""border"": ""4px solid black"",
+    ""borderRadius"": ""50%"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center"",
+    ""boxSizing"": ""border-box""
+  },
+  ""avatar-head"": {
+    ""position"": ""absolute"",
+    ""top"": ""20px"",
+    ""width"": ""30px"",
+    ""height"": ""30px"",
+    ""backgroundColor"": ""black"",
+    ""borderRadius"": ""50%""
+  },
+  ""avatar-body"": {
+    ""position"": ""absolute"",
+    ""top"": ""50px"",
+    ""width"": ""40px"",
+    ""height"": ""30px"",
+    ""borderTop"": ""4px solid black"",
+    ""borderLeft"": ""4px solid black"",
+    ""borderRight"": ""4px solid black"",
+    ""borderBottom"": ""none"",
+    ""borderRadius"": ""20px 20px 0 0""
+  }
+}",Logo/Avatar_icon.png,
+A small notification should appear briefly to inform users of recent actions.,Toast bar,rectangular,240x164,black,,,header_zone,,Toast bar_icon.png,
+Users should receive subtle feedback at the bottom of the screen with an option to respond.,Snack bar,rectangular,240x48,black,,,header_zone,,Snack bar_icon.png,
+Important messages should grab attention by appearing in the center of the screen.,Pop-up,rectangular,400x300,black,,,header_zone,,Pop-up_icon.png,
+Users should be guided to enter information with structured fields and prompts.,Form,rectangular,400x600,blue,,,main_content_zone,,Form_icon.png,
+A small visual cue should highlight status changes without being intrusive.,Indicator,Square,200x200,black,,,main_content_zone,,Indicator_icon.png,
+Users should be able to watch media with essential playback controls.,Video,rectangular,400x600,black,,,main_content_zone,".video-component {
+  width: 400px;
+  height: 300px;
+  border: 4px solid black; /* Outer video frame */
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Top clapboard bar */
+.video-component .clapboard {
+  width: 100%;
+  height: 50px;
+  background-color: lightgray;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Diagonal lines on the clapboard */
+.video-component .clapboard div {
+  width: 30px;
+  height: 100%;
+  background-color: black;
+  clip-path: polygon(0 0, 100% 0, 0% 100%, 0 100%);
+}
+
+/* Play button */
+.video-component .play-button {
+  width: 0;
+  height: 0;
+  border-left: 40px solid black;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  position: absolute;
+}",Video_icon.png,
+Information should be displayed in an easy-to-scan vertical format.,List,rectangular,50x150,grey,,,main_content_zone,,List_icon.png,
+A fixed bar should help users move between key sections effortlessly.,Navigation bar,rectangular,60x800,grey,,,navigation_zone,".hamburger {
+  width: 35px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+ 
+.hamburger div {
+  height: 6px;
+  background-color: black;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}",Navigation bar_icon.png,
+Users should choose a single option from a group by selecting a circular control.,Radio Button,Square,50x50,grey,,,main_content_zone,"/* Container for the radio button */
+.radio-button {
+  width: 24px;
+  height: 24px;
+  border: 4px solid black; /* Outer ring */
+  border-radius: 50%;       /* Makes it circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;  /* Background behind inner dot */
+}
+
+/* Inner filled circle (selected state) */
+.radio-button .inner-circle {
+  width: 12px;
+  height: 12px;
+  background-color: black;  /* Inner dot color */
+  border-radius: 50%;       /* Makes it circular */
+}",Radio Button_icon.png,
+A prominent section should highlight key information or promotions.,Banner,rectangular,800x200,black,,,header_zone,,Banner_icon.png,
+A structured layout should offer users a way to access different features quickly.,Menu,rectangular,40x600,grey,,,main_content_zone,".bullet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+ 
+.bullet-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+ 
+.bullet-circle {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+ 
+.bullet-bar {
+  width: 160px;
+  height: 20px;
+  background-color: black;
+  border-radius: 10px;
+}",Menu_icon.png,
+Users should interact with the system using tappable elements.,Button,rectangular,36x160,black,,,main_content_zone,,Button_icon.png,
+Small symbolic graphics should help users recognize functions at a glance.,Icon,Square,64x64,grey,,,header_zone,,Icon_icon.png,
+"Users should be able to take action using compact, icon-based controls.",Icon button,rectangular,36x200,grey,,,header_zone,,Icon button_icon.png,
+A simple switch should allow users to enable or disable a setting easily.,Toggle switch button,rectangular,24x48,grey,,,main_content_zone,"{
+  ""toggleSwitchWrapper"": {
+    ""width"": ""50px"",
+    ""height"": ""25px"",
+    ""backgroundColor"": ""lightgray"",
+    ""borderRadius"": ""25px"",
+    ""position"": ""relative"",
+    ""cursor"": ""pointer"",
+    ""transition"": ""background-color 0.3s""
+  },
+  ""toggleSwitchKnob"": {
+    ""width"": ""23px"",
+    ""height"": ""23px"",
+    ""backgroundColor"": ""white"",
+    ""borderRadius"": ""50%"",
+    ""position"": ""absolute"",
+    ""top"": ""1px"",
+    ""left"": ""1px"",
+    ""transition"": ""left 0.3s""
+  },
+  ""toggleSwitchWrapperOn"": {
+    ""backgroundColor"": ""green""
+  },
+  ""toggleSwitchKnobOn"": {
+    ""left"": ""26px""
+  }
+}",Toggle switch button_icon.png,
+Users should be able to jump to another section or webpage with a single tap.,Link button,rectangular,24x64,grey,,,main_content_zone,"{
+  ""component"": ""LinkButtonIcon"",
+  ""style"": {
+    ""position"": ""relative"",
+    ""width"": ""100px"",
+    ""height"": ""100px"",
+    ""borderRadius"": ""16px"",
+    ""border"": ""4px solid black"",
+    ""boxSizing"": ""border-box"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center"",
+    ""backgroundColor"": ""white""
+  },
+  ""elements"": {
+    ""arrow-line"": {
+      ""position"": ""absolute"",
+      ""width"": ""60px"",
+      ""height"": ""10px"",
+      ""backgroundColor"": ""black"",
+      ""top"": ""20px"",
+      ""left"": ""20px"",
+      ""transform"": ""rotate(45deg)"",
+      ""transformOrigin"": ""left center""
+    },
+    ""arrow-head"": {
+      ""position"": ""absolute"",
+      ""width"": ""0"",
+      ""height"": ""0"",
+      ""borderTop"": ""10px solid transparent"",
+      ""borderBottom"": ""10px solid transparent"",
+      ""borderLeft"": ""15px solid black"",
+      ""top"": ""10px"",
+      ""right"": ""10px"",
+      ""transform"": ""rotate(45deg)""
+    },
+    ""box-corner"": {
+      ""position"": ""absolute"",
+      ""width"": ""60px"",
+      ""height"": ""60px"",
+      ""border"": ""8px solid black"",
+      ""borderTop"": ""none"",
+      ""borderRight"": ""none"",
+      ""bottom"": ""0"",
+      ""left"": ""0"",
+      ""borderRadius"": ""12px""
+    }
+  }
+}",Link button_icon.png,
+"Visual content should be displayed clearly, adapting to different screen sizes.",Image,Square,172x172,black,,,main_content_zone,".image-component {
+  width: 400px;
+  height: 300px;
+  border: 4px solid black; /* Outer frame */
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inner image frame */
+.image-component .inner-frame {
+  width: 90%;
+  height: 80%;
+  border: 2px solid black;
+  position: relative;
+  background-color: transparent;
+}
+
+/* Mountains (as triangles) */
+.image-component .mountain1,
+.image-component .mountain2 {
+  position: absolute;
+  bottom: 0;
+  border-style: solid;
+}
+
+/* Left mountain */
+.image-component .mountain1 {
+  left: 10%;
+  border-width: 0 40px 60px 40px;
+  border-color: transparent transparent black transparent;
+}
+
+/* Right mountain */
+.image-component .mountain2 {
+  left: 35%;
+  border-width: 0 50px 80px 50px;
+  border-color: transparent transparent black transparent;
+}
+
+/* Sun (circle) */
+.image-component .sun {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+}",Image_icon.png,
+A brief description should accompany images for better context.,Image with caption,rectangular,172x196,blue,,,main_content_zone,".image-caption-wrapper {
+  width: 400px;
+  height: 350px; /* Reference size */
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 8px gray;
+}
+
+.caption-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid black;
+}
+
+.caption-text {
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+}",Image with caption_icon.png,
+Headings should stand out to help users navigate the content easily.,Title,rectangular,"(24px, bold) 24x10 ",blue,,,header_zone,,Title_icon.png,
+Additional headings should provide clarity without overwhelming users.,Sub title,rectangular,"(16px, bold) 16x10",blue,,,header_zone,,Sub title_icon.png,
+Text content should be readable and well-spaced for user convenience.,Paragraph,rectangular,"(14px, regular) 14x10",blue,,,main_content_zone,"{
+  ""component"": ""ParagraphSymbol"",
+  ""style"": {
+    ""width"": ""100px"",
+    ""height"": ""100px"",
+    ""borderRadius"": ""50%"",                  // Circular shape
+    ""backgroundColor"": ""white"",             // Background behind the symbol
+    ""border"": ""2px solid black"",            // Thin black border
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center"",
+    ""fontSize"": ""48px"",                     // Prominent symbol size
+    ""fontWeight"": ""bold"",
+    ""color"": ""black"",                       // Symbol color
+    ""fontFamily"": ""Arial, sans-serif"",
+    ""boxShadow"": ""0px 4px 6px rgba(0, 0, 0, 0.1)"", // Subtle shadow
+    ""margin"": ""10px""
+  },
+  ""content"": ""�""
+}",Paragraph_icon.png,
+A subtle animation should indicate when the system is processing a task.,Loader,circular,64x64,black,,,main_content_zone,,Loader_icon.png,
+Users should see a rotating animation when waiting for an action to complete.,Spinner,circular,64x64,grey,,,main_content_zone,".spinner {
+  width: 100px;
+  height: 100px;
+  border: 8px solid lightgray;
+  border-top: 8px solid black;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+/* Spin Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}",Spinner_icon.png,
+A visual representation should indicate how far along a task is.,Progress,rectangular,16x96,black,,,main_content_zone,".progress {
+  width: 400px;
+  height: 30px;
+  background-color: navy;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Progress Fill */
+.progress::before {
+  content: """";
+  display: block;
+  height: 100%;
+  width: 25%; /* example fill */
+  background-color: lightblue;
+}",Progress_icon.png,
+A compact section should remain visible without obstructing the main content.,Floating aside section,rectangular,320x768,black,,,navigation_zone,,Floating aside section_icon.png,
+Users should be able to check the time in their preferred format.,Clock (Digital),Square,196x196,black,,,header_zone,,Clock (Digital)_icon.png,
+Users should be able to check the time in their preferred format.,Clock (Analog),circular,196x196,black,,,header_zone,".clock {
+  width: 300px;
+  height: 300px;
+  border: 8px solid black;
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+}
+
+/* Center dot */
+.clock::before {
+  content: """";
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+/* Hour Hand */
+.clock .hour {
+  width: 6px;
+  height: 70px;
+  background-color: black;
+  position: absolute;
+  top: 80px;
+  left: 147px;
+  transform-origin: bottom center;
+  transform: rotate(0deg); /* Set dynamically */
+  z-index: 5;
+}
+
+/* Minute Hand */
+.clock .minute {
+  width: 4px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  top: 50px;
+  left: 148px;
+  transform-origin: bottom center;
+  transform: rotate(0deg); /* Set dynamically */
+  z-index: 6;
+}
+
+/* Tick marks */
+.clock .tick {
+  width: 2px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 149px;
+  transform-origin: bottom center;
+}",Clock (Analog)_icon.png,
+A circular dial should help users monitor key metrics at a glance.,Gauge,Square,150x150,black,,,main_content_zone,".guage { 
+  position: relative; 
+  width: 250px; 
+  height: 125px; 
+  border-top-left-radius: 125px; 
+  border-top-right-radius: 125px; 
+  background-color: transparent; 
+  overflow: hidden; 
+  border: 10px solid #222; 
+  border-bottom: none; 
+  margin: 20px auto; 
+} 
+ 
+.ticks { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+} 
+ 
+.tick { 
+  position: absolute; 
+  top: 0; 
+  left: 50%; 
+  width: 6px; 
+  height: 30px; 
+  background-color: #222; 
+  transform-origin: bottom center; 
+} 
+ 
+.needle { 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  width: 4px; 
+  height: 90px; 
+  background-color: #222; 
+  transform-origin: bottom center; 
+  transition: transform 0.5s ease; 
+} 
+ 
+.center-dot { 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  width: 20px; 
+  height: 20px; 
+  background-color: #222; 
+  border-radius: 50%; 
+  transform: translate(-50%, 50%); 
+} 
+",Gauge_icon.png,
+A visual thermometer should indicate current temperature levels.,Thermometer Widget,rectangular,196x20,black,,,main_content_zone,"{
+  ""thermometer-container"": {
+    ""position"": ""relative"",
+    ""width"": ""20px"",
+    ""height"": ""120px"",
+    ""backgroundColor"": ""black"",
+    ""borderRadius"": ""10px"",
+    ""margin"": ""auto""
+  },
+  ""thermometer-bulb"": {
+    ""position"": ""absolute"",
+    ""bottom"": ""-30px"",
+    ""left"": ""-20px"",
+    ""width"": ""60px"",
+    ""height"": ""60px"",
+    ""backgroundColor"": ""black"",
+    ""borderRadius"": ""50%""
+  },
+  ""bar1"": {
+    ""position"": ""absolute"",
+    ""right"": ""-30px"",
+    ""top"": ""15px"",
+    ""width"": ""40px"",
+    ""height"": ""10px"",
+    ""backgroundColor"": ""black""
+  },
+  ""bar2"": {
+    ""position"": ""absolute"",
+    ""right"": ""-30px"",
+    ""top"": ""45px"",
+    ""width"": ""40px"",
+    ""height"": ""10px"",
+    ""backgroundColor"": ""black""
+  },
+  ""bar3"": {
+    ""position"": ""absolute"",
+    ""right"": ""-30px"",
+    ""top"": ""75px"",
+    ""width"": ""40px"",
+    ""height"": ""10px"",
+    ""backgroundColor"": ""black""
+  },
+  ""wave1"": {
+    ""position"": ""absolute"",
+    ""bottom"": ""-60px"",
+    ""left"": ""-40px"",
+    ""width"": ""150px"",
+    ""height"": ""20px"",
+    ""backgroundImage"": ""repeating-linear-gradient(90deg, transparent, transparent 5px, black 5px, black 15px)"",
+    ""borderBottom"": ""5px solid black"",
+    ""borderTopLeftRadius"": ""10px"",
+    ""borderTopRightRadius"": ""10px""
+  },
+  ""wave2"": {
+    ""position"": ""absolute"",
+    ""bottom"": ""-80px"",
+    ""left"": ""-40px"",
+    ""width"": ""150px"",
+    ""height"": ""20px"",
+    ""backgroundImage"": ""repeating-linear-gradient(90deg, transparent, transparent 5px, black 5px, black 15px)"",
+    ""borderBottom"": ""5px solid black"",
+    ""borderTopLeftRadius"": ""10px"",
+    ""borderTopRightRadius"": ""10px""
+  }
+}",Thermometer Widget_icon.png,
+Users should have a directional guide displayed dynamically.,Compass,circular,172x172,black,,,main_content_zone,"{
+  ""compass-container"": {
+    ""position"": ""relative"",
+    ""width"": ""200px"",
+    ""height"": ""200px"",
+    ""border"": ""8px solid black"",
+    ""borderRadius"": ""50%"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center""
+  },
+  ""compass-needle"": {
+    ""position"": ""absolute"",
+    ""width"": ""4px"",
+    ""height"": ""90px"",
+    ""backgroundColor"": ""black"",
+    ""transformOrigin"": ""bottom center"",
+    ""transform"": ""rotate(0deg)""
+  },
+  ""needle-tip"": {
+    ""position"": ""absolute"",
+    ""top"": ""10px"",
+    ""left"": ""calc(50% - 8px)"",
+    ""width"": ""0"",
+    ""height"": ""0"",
+    ""borderLeft"": ""8px solid transparent"",
+    ""borderRight"": ""8px solid transparent"",
+    ""borderBottom"": ""20px solid white""
+  },
+  ""direction-n"": {
+    ""position"": ""absolute"",
+    ""top"": ""5px"",
+    ""left"": ""50%"",
+    ""transform"": ""translateX(-50%)"",
+    ""fontWeight"": ""bold""
+  },
+  ""direction-s"": {
+    ""position"": ""absolute"",
+    ""bottom"": ""5px"",
+    ""left"": ""50%"",
+    ""transform"": ""translateX(-50%)"",
+    ""fontWeight"": ""bold""
+  },
+  ""direction-e"": {
+    ""position"": ""absolute"",
+    ""top"": ""50%"",
+    ""right"": ""5px"",
+    ""transform"": ""translateY(-50%)"",
+    ""fontWeight"": ""bold""
+  },
+  ""direction-w"": {
+    ""position"": ""absolute"",
+    ""top"": ""50%"",
+    ""left"": ""5px"",
+    ""transform"": ""translateY(-50%)"",
+    ""fontWeight"": ""bold""
+  }
+}",Compass_icon.png,
+A small interactive map should provide location details seamlessly.,Map Widget,Square,400x400,grey,,,main_content_zone,"/* Container to simulate the widget */
+.map-widget {
+  width: 100px;
+  height: 140px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pin shape */
+.pin {
+  width: 100px;
+  height: 140px;
+  background-color: black;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: relative;
+  clip-path: polygon(50% 100%, 0 40%, 0 30%, 50% 0%, 100% 30%, 100% 40%);
+}
+
+/* Inner white circle */
+.pin .circle {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Car icon */
+.pin .circle .car {
+  font-size: 24px;
+  color: black;
+}",Map Widget_icon.png,
+Thin dividers should help distinguish different sections of content.,Line Separator,rectangular,20x196,black,,,main_content_zone,,Line Separator_icon.png,
+Content should be grouped in rectangular sections for better organization.,Card Widget,Square,150x150,black,,,main_content_zone,,Card Widget_icon.png,
+A guided step-by-step indicator should show progress in multi-stage tasks.,Stepper Widget,rectangular,196x40,black,,,main_content_zone,,Stepper Widget_icon.png,
+"The infotainment system shall display the total distance traveled by the vehicle in kilometers or miles, based on user preference",Odometer,circular,200x200,black,,,main_content_zone,".odometer-container { 
+  width: 300px; 
+  margin: 40px auto; 
+} 
+ 
+.gauge-arc { 
+  position: relative; 
+  width: 100%; 
+  height: 150px; 
+  border-top-left-radius: 150px; 
+  border-top-right-radius: 150px; 
+  border: 10px solid black; 
+  border-bottom: none; 
+  overflow: hidden; 
+} 
+ 
+.tick { 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  width: 6px; 
+  height: 25px; 
+  background-color: black; 
+  transform-origin: bottom center; 
+} 
+ 
+.needle { 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  width: 6px; 
+  height: 80px; 
+  background-color: black; 
+  transform-origin: bottom center; 
+  transition: transform 0.5s ease-in-out; 
+} 
+ 
+.center-circle { 
+  position: absolute; 
+  bottom: -10px; 
+  left: 50%; 
+  width: 30px; 
+  height: 30px; 
+  background-color: white; 
+  border: 6px solid black; 
+  border-radius: 50%; 
+  transform: translateX(-50%); 
+} 
+ 
+.display-box { 
+  width: 80px; 
+  height: 25px; 
+  margin: 20px auto 0; 
+  border: 5px solid black; 
+  border-radius: 5px; 
+} 
+",Odometer_icon.png,
+"The system shall allow the user to switch between available drive modes through a touchscreen interface or physical controls, based on vehicle capabilities",Drive mode,Square,100x100,black,,,header_zone,,Drive mode_icon.png,
+The terrain mode status shall be retained after vehicle restart unless overridden by safety protocols,Terrian Mode,Square,100x100,grey,,,header_zone,,Terrian Mode_icon.png,
+The clock shall support automatic synchronization via GPS or network connection.,Digital Clock,Square,100x100,black,,,header_zone,,Digital Clock_icon.png,
+The temperature data shall be sourced from the vehicle’s external sensor and updated in real-time,Outside Temperature,Square,100x100,black,,,header_zone,"{
+  ""component"": ""OutsideTemperature"",
+  ""style"": {
+    ""width"": ""80px"",
+    ""height"": ""200px"",
+    ""borderRadius"": ""12px"",                   // Rounded corners for a softer look
+    ""backgroundColor"": ""white"",
+    ""border"": ""2px solid black"",
+    ""display"": ""flex"",
+    ""flexDirection"": ""column"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center"",
+    ""padding"": ""10px"",
+    ""boxShadow"": ""0px 4px 8px rgba(0, 0, 0, 0.1)"",
+    ""fontSize"": ""40px"",
+    ""color"": ""black"",
+    ""margin"": ""10px""
+  },
+  ""icon"": ""?????"",
+  ""label"": {
+    ""text"": ""Outside Temp"",
+    ""style"": {
+      ""fontSize"": ""12px"",
+      ""marginTop"": ""8px"",
+      ""color"": ""black""
+    }
+  }
+}",Outside Temperature_icon.png,
+The system shall display vehicle speed in digital format with an option to switch between km/h and mph,Digital Speed,rectangular,300x400,black,,,main_content_zone,,Digital Speed_icon.png,
+The infotainment system shall display the engine’s RPM digitally with real-time updates.,Digital RPM,rectangular,300x400,black,,,main_content_zone,".DigitalRPM { 
+  width: 300px; 
+  height: 150px; 
+  position: relative; 
+  margin: 40px auto; 
+} 
+ 
+.gauge { 
+  width: 100%; 
+  height: 100%; 
+  border-radius: 100% 100% 0 0; 
+  background: transparent; 
+  position: relative; 
+} 
+ 
+.segments { 
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  top: 0; 
+  left: 0; 
+} 
+ 
+.segment { 
+  width: 6px; 
+  height: 20px; 
+  background-color: red; 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  transform-origin: bottom center; 
+} 
+ 
+.needle { 
+  width: 4px; 
+  height: 120px; 
+  background-color: red; 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  transform-origin: bottom center; 
+  transition: transform 0.3s ease-in-out; 
+} 
+ 
+.center-dot { 
+  width: 20px; 
+  height: 20px; 
+  background-color: black; 
+  border-radius: 50%; 
+  position: absolute; 
+  bottom: 0; 
+  left: calc(50% - 10px); 
+} 
+",Digital RPM_icon.png,
+The system shall allow users to enable or disable the digital power display via settings,Digital Power,rectangular,300x400,black,,,main_content_zone,,Digital Power_icon.png,
+"The infotainment system shall display the current gear position (P, R, N, D, L) in real-time",Gear (PRNDL),Square,150x150,black,,,header_zone,".gear-selector {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+/* Labels: P R N D L */
+.gear-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  margin-right: 20px;
+}
+
+/* Vertical Track */
+.gear-track {
+  width: 40px;
+  height: 180px;
+  background-color: lightgray;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Gear Slider (movable) */
+.gear-slider {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 0; /* adjust dynamically via JS if needed */
+}",Gear (PRNDL)_icon.png,
+The system shall display the selected manual gear mode (M1 to Mx) when in manual shift mode,Gear (M1 to Mx),Square,150x150,black,,,header_zone,,Gear (M1 to Mx)_icon.png,
+The driver shall have the option to disable the gear shift recommendation display.,Gear Shift Recommendation,Square,150x150,grey,,,main_content_zone,,Gear Shift Recommendation_icon.png,
+The system shall display paddle shifter engagement status when the driver uses manual shifting,Paddle Shifter,Square,80x80,grey,,,main_content_zone,,Paddle Shifter_icon.png,
+The infotainment system shall display a digital speedometer with an option to switch between analog and digital views,Speedometer,circular,300x300,blue,,,main_content_zone,".speedometer-wrapper { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 300px; 
+  margin: 0 auto; 
+} 
+ 
+.speedometer { 
+  position: relative; 
+  width: 280px; 
+  height: 280px; 
+  border: 2px solid black; 
+  border-radius: 50%; 
+  background-color: transparent; 
+  overflow: hidden; 
+} 
+ 
+.ticks { 
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  top: 0; 
+  left: 0; 
+} 
+ 
+.tick { 
+  width: 2px; 
+  height: 15px; 
+  background-color: black; 
+  position: absolute; 
+  top: 10px; 
+  left: 50%; 
+  transform-origin: center bottom; 
+} 
+ 
+.tick.major { 
+  height: 25px; 
+  width: 3px; 
+} 
+ 
+.needle { 
+  width: 4px; 
+  height: 120px; 
+  background-color: black; 
+  position: absolute; 
+  top: 40px; 
+  left: 50%; 
+  transform-origin: bottom center; 
+  transition: transform 0.3s ease-in-out; 
+} 
+ 
+.center-dot { 
+  width: 20px; 
+  height: 20px; 
+  background-color: black; 
+  border-radius: 50%; 
+  position: absolute; 
+  top: 130px; 
+  left: 130px; 
+} 
+ 
+.unit-box { 
+  margin-top: 10px; 
+  border: 1px solid black; 
+  width: 80px; 
+  height: 30px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+} 
+ 
+.unit { 
+  font-weight: bold; 
+  font-size: 14px; 
+} 
+ 
+.speed-label { 
+  margin-top: 5px; 
+  font-size: 18px; 
+  font-weight: bold; 
+} 
+",Speedometer_icon.png,
+The tachometer shall update in real-time based on engine speed data,Tachometer,circular,200x200,blue,,,main_content_zone,"{
+  ""tachometer-wrapper"": {
+    ""position"": ""relative"",
+    ""width"": ""200px"",
+    ""height"": ""200px"",
+    ""borderRadius"": ""50%"",
+    ""border"": ""12px solid black"",
+    ""boxSizing"": ""border-box"",
+    ""overflow"": ""hidden""
+  },
+  ""center-dot"": {
+    ""position"": ""absolute"",
+    ""top"": ""50%"",
+    ""left"": ""50%"",
+    ""width"": ""20px"",
+    ""height"": ""20px"",
+    ""backgroundColor"": ""black"",
+    ""borderRadius"": ""50%"",
+    ""transform"": ""translate(-50%, -50%)""
+  },
+  ""needle"": {
+    ""position"": ""absolute"",
+    ""top"": ""50%"",
+    ""left"": ""50%"",
+    ""width"": ""6px"",
+    ""height"": ""80px"",
+    ""backgroundColor"": ""black"",
+    ""transformOrigin"": ""bottom center"",
+    ""transform"": ""translateX(-50%) rotate(-45deg)""
+  },
+  ""tick1"": {
+    ""position"": ""absolute"",
+    ""top"": ""10px"",
+    ""left"": ""50%"",
+    ""width"": ""4px"",
+    ""height"": ""20px"",
+    ""backgroundColor"": ""black"",
+    ""transform"": ""translateX(-50%) rotate(0deg)"",
+    ""transformOrigin"": ""bottom center""
+  },
+  ""tick2"": {
+    ""position"": ""absolute"",
+    ""top"": ""20px"",
+    ""left"": ""85%"",
+    ""width"": ""4px"",
+    ""height"": ""20px"",
+    ""backgroundColor"": ""black"",
+    ""transform"": ""rotate(45deg)"",
+    ""transformOrigin"": ""bottom center""
+  },
+  ""tick3"": {
+    ""position"": ""absolute"",
+    ""top"": ""50%"",
+    ""left"": ""95%"",
+    ""width"": ""4px"",
+    ""height"": ""20px"",
+    ""backgroundColor"": ""black"",
+    ""transform"": ""rotate(90deg)"",
+    ""transformOrigin"": ""bottom center""
+  },
+  ""tick4"": {
+    ""position"": ""absolute"",
+    ""top"": ""85%"",
+    ""left"": ""85%"",
+    ""width"": ""4px"",
+    ""height"": ""20px"",
+    ""backgroundColor"": ""black"",
+    ""transform"": ""rotate(135deg)"",
+    ""transformOrigin"": ""bottom center""
+  }
+}",Tachometer_icon.png,
+The fuel gauge shall update dynamically based on sensor data from the fuel tank.,Fuel,rectangular,300x150,black,,,header_zone,".fuel-wrapper { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 280px; 
+  margin: auto; 
+} 
+ 
+.fuel-gauge { 
+  position: relative; 
+  width: 250px; 
+  height: 130px; 
+  border-top-left-radius: 125px; 
+  border-top-right-radius: 125px; 
+  background: transparent; 
+  overflow: visible; 
+} 
+ 
+.ticks { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+} 
+ 
+.tick { 
+  width: 3px; 
+  height: 20px; 
+  background-color: #333; 
+  position: absolute; 
+  top: 0; 
+  left: 50%; 
+  transform-origin: center bottom; 
+} 
+ 
+.needle { 
+  width: 4px; 
+  height: 100px; 
+  background-color: #c40000; 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  transform-origin: bottom center; 
+  transition: transform 0.4s ease-in-out; 
+} 
+ 
+.center-dot { 
+  width: 20px; 
+  height: 20px; 
+  background-color: #333; 
+  border-radius: 50%; 
+  position: absolute; 
+  bottom: 0; 
+  left: calc(50% - 10px); 
+} 
+ 
+.label { 
+  position: absolute; 
+  font-weight: bold; 
+  font-size: 20px; 
+} 
+ 
+.e-label { 
+  bottom: 0; 
+  left: 10px; 
+  color: #b30000; 
+} 
+ 
+.f-label { 
+  bottom: 0; 
+  right: 10px; 
+  color: #333; 
+} 
+ 
+.fuel-icon { 
+  font-size: 20px; 
+  position: absolute; 
+  top: 35px; 
+  left: 50%; 
+ 
+",Fuel_icon.png,
+The system shall display the engine coolant temperature with a gauge.,Coolant,rectangular,100x150,black,,,main_content_zone,".coolant-icon {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Base container representing the thermometer pipe */
+.coolant-icon .thermo-body {
+  width: 20px;
+  height: 70px;
+  background-color: black;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Thermometer bulb at bottom */
+.coolant-icon .thermo-bulb {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Heat waves (zigzag lines above) */
+.coolant-icon .wave {
+  width: 40px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+/* Individual wave positions */
+.coolant-icon .wave1 {
+  top: 5px;
+}
+.coolant-icon .wave2 {
+  top: 15px;
+}
+.coolant-icon .wave3 {
+  top: 25px;
+}",Coolant_icon.png,
+The power display shall be dynamically updated based on engine load,Power,Square,150x150,black,,,main_content_zone,"{
+  ""car-body"": {
+    ""position"": ""relative"",
+    ""width"": ""120px"",
+    ""height"": ""60px"",
+    ""border"": ""4px solid black"",
+    ""borderRadius"": ""10px"",
+    ""borderTopLeftRadius"": ""30px"",
+    ""margin"": ""20px auto"",
+    ""boxSizing"": ""border-box""
+  },
+  ""car-door"": {
+    ""position"": ""absolute"",
+    ""top"": ""20px"",
+    ""left"": ""20px"",
+    ""width"": ""20px"",
+    ""height"": ""15px"",
+    ""border"": ""3px solid black"",
+    ""borderRadius"": ""4px"",
+    ""boxSizing"": ""border-box""
+  },
+  ""car-front"": {
+    ""position"": ""absolute"",
+    ""top"": ""5px"",
+    ""left"": ""-25px"",
+    ""width"": ""30px"",
+    ""height"": ""30px"",
+    ""border"": ""4px solid black"",
+    ""borderRight"": ""none"",
+    ""borderRadius"": ""10px 0 0 10px"",
+    ""boxSizing"": ""border-box""
+  },
+  ""bolt-circle"": {
+    ""position"": ""absolute"",
+    ""top"": ""-30px"",
+    ""right"": ""-40px"",
+    ""width"": ""60px"",
+    ""height"": ""60px"",
+    ""border"": ""4px solid black"",
+    ""borderRadius"": ""50%"",
+    ""boxSizing"": ""border-box""
+  },
+  ""bolt"": {
+    ""position"": ""absolute"",
+    ""top"": ""-18px"",
+    ""right"": ""-20px"",
+    ""width"": ""0"",
+    ""height"": ""0"",
+    ""borderLeft"": ""10px solid transparent"",
+    ""borderRight"": ""10px solid transparent"",
+    ""borderBottom"": ""20px solid black"",
+    ""transform"": ""rotate(25deg)""
+  },
+  ""bolt-tail"": {
+    ""position"": ""absolute"",
+    ""top"": ""-5px"",
+    ""right"": ""-5px"",
+    ""width"": ""0"",
+    ""height"": ""0"",
+    ""borderLeft"": ""6px solid transparent"",
+    ""borderRight"": ""6px solid transparent"",
+    ""borderTop"": ""15px solid black"",
+    ""transform"": ""rotate(25deg)""
+  }
+}",Power_icon.png,
+The system shall display energy regeneration status for hybrid vehicles.,Regeneration,Square,150x150,black,,,main_content_zone,,Regeneration_icon.png,
+The system shall display the battery charge level for electric vehicles.,Battery State of Charge Gauge,square,150x300,black,,,main_content_zone,".battery-gauge {
+  width: 50px;
+  height: 30px;
+  border: 3px solid black; /* Outer battery body */
+  border-radius: 4px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+/* Battery terminal */
+.battery-gauge::after {
+  content: """";
+  position: absolute;
+  right: -6px;
+  top: 30%;
+  width: 4px;
+  height: 40%;
+  background-color: black;
+  border-radius: 1px;
+}
+
+/* Battery level bars */
+.battery-gauge .bar {
+  height: 100%;
+  background-color: black;
+  margin-left: 2px;
+  flex: 1;
+  border-radius: 1px;
+}
+
+/* Empty space to simulate charge level */
+.battery-gauge .bar.empty {
+  background-color: transparent;
+  border: 1px solid black;
+}",Battery State of Charge Gauge_icon.png,
+The system shall display the DEF level for diesel vehicles.,UREA (DEF) Gauge,rectangular,150x300,black,,,main_content_zone,,UREA (DEF) Gauge_icon.png,
+The system shall provide low CNG warnings when fuel levels drop below a predefined threshold.,CNG Gauge,rectangular,190x280,black,,,main_content_zone,,CNG Gauge_icon.png,
+The system shall record and display the total distance traveled in Trip A.,Trip A - Distance,Square,100x100,blue,,,main_content_zone,,Trip A - Distance_icon.png,
+The system shall calculate and display the fuel efficiency for Trip A.,Trip A - Mileage,Square,100x100,blue,,,main_content_zone,,Trip A - Mileage_icon.png,
+The system shall record the total driving time for Trip A.,Trip A - Time,Square,100x100,blue,,,main_content_zone,,Trip A - Time_icon.png,
+The system shall calculate and display the average speed for Trip A.,Trip A - Avg. Speed,Square,100x100,blue,,,main_content_zone,,Trip A - Avg. Speed_icon.png,
+The system shall record and display the total distance traveled in Trip B.,Trip B - Distance,Square,100x100,blue,,,main_content_zone,,Trip B - Distance_icon.png,
+The system shall calculate and display the fuel efficiency for Trip B.,Trip B - Mileage,Square,100x100,blue,,,main_content_zone,,Trip B - Mileage_icon.png,
+The system shall record the total driving time for Trip B.,Trip B - Time,Square,100x100,blue,,,main_content_zone,,Trip B - Time_icon.png,
+The system shall calculate and display the average speed for Trip B.,Trip B - Avg. Speed,Square,100x100,blue,,,main_content_zone,,Trip B - Avg. Speed_icon.png,
+The system shall display the estimated cruising range based on current fuel level and driving conditions.,Cruising range,rectangular,100x100,black,,,main_content_zone,,Cruising range_icon.png,
+The system shall display the estimated electric range for EVs based on battery charge level.,Electric range display,rectangular,150x300,black,,,footer_zone,,Electric range display_icon.png,
+The system shall provide real-time fuel consumption data in L/100km or MPG.,Instantaneous fuel consumption display,rectangular,150x300,black,,,footer_zone,".Instantaneous-Fuel-Consumption-Display  {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background: white;
+  margin: 20px;
+}
+
+.gauge-arc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 80px;
+  background: black;
+  transform-origin: bottom center;
+  transform: rotate(45deg); /* Needle angle can be dynamically updated */
+}
+
+.labels {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  font-size: 20px;
+  font-weight: bold;
+}",Instantaneous fuel consumption display_icon.png,
+The system shall calculate and display the average fuel consumption over a trip.,Average fuel consumption,Square,150x300,black,,,footer_zone,,Average fuel consumption_icon.png,
+The system shall display real-time power consumption in kW or percentage.,Instantaneous power consumption,rectangular,150x300,black,,,footer_zone,,Instantaneous power consumption_icon.png,
+The system shall calculate and display the average power consumption over a trip.,Average power consumption,rectangular,150x300,black,,,footer_zone,,Average power consumption_icon.png,
+The system shall support 30 static telltales displayed in predefined slots.,QM Telltales - Static Slot (30 Telltales),rectangular,50x50 ,black,,,main_content_zone,,QM Telltales - Static Slot (30 Telltales)_icon.png,
+The system shall allow 30 telltales to be shared across 10 available slots.,"QM Telltales - Sharable Slot (30 Telltales, 10 Slots)",rectangular,50x150,black,,,main_content_zone,,"QM Telltales - Sharable Slot (30 Telltales, 10 Slots)_icon.png",
+The system shall support ASIL-B telltales for critical vehicle warnings.,ASIL-B Telltales (10 TT),Square,50x50 ,black,,,main_content_zone,,ASIL-B Telltales (10 TT)_icon.png,
+The system shall perform a telltale self-test at each vehicle start-up.,Telltale Self Test,rectangular,200x400,black,,,main_content_zone,,Telltale Self Test_icon.png,
+The system shall display static alerts with icons only for 50 predefined alerts.,Static Popup/Alert  -  Icon only   (50 Alerts),rectangular,100x100 ,grey,,,header_zone,,Static Popup/Alert  -  Icon only   (50 Alerts)_icon.png,
+The system shall display static alerts with icons and text for 50 predefined alerts.,Static Popup/Alert  - Icon + Text (50 Alerts),rectangular,150x300 ,grey,,,header_zone,,Static Popup/Alert  - Icon + Text (50 Alerts)_icon.png,
+The system shall display static alerts with text only for 50 predefined alerts.,Static Popup/Alert  -  Text only   (50 Alerts),rectangular,100x300 ,blue,,,header_zone,,Static Popup/Alert  -  Text only   (50 Alerts)_icon.png,
+The system shall support 25 dynamic popups for real-time alerts.,Dynamic Popup/Alert  (25 Alerts),rectangular,200x400 ,black,,,header_zone,,Dynamic Popup/Alert  (25 Alerts)_icon.png,
+"The system shall support a multi-zone display for left, right, and top sections.","Multi Zone display (Left, Right & Top)",rectangular,300x500 ,black,,,main_content_zone,,"Multi Zone display (Left, Right & Top)_icon.png",
+The system shall display the currently playing track name.,Current Track name,rectangular,150x300 ,blue,,,main_content_zone,,Current Track name_icon.png,
+The system shall show the elapsed and remaining time of the current track.,Current Track time,rectangular,150x300 ,blue,,,main_content_zone,,Current Track time_icon.png,
+The system shall display source icons and album art for media playback.,Source Icons & Album art image,rectangular,150x300 ,grey,,,main_content_zone,,Source Icons & Album art image_icon.png,
+The system shall provide volume control with visual feedback.,Volume,rectangular,100x300,grey,,,navigation_zone,"{
+  ""volume-icon"": {
+    ""position"": ""relative"",
+    ""width"": ""0"",
+    ""height"": ""0"",
+    ""borderTop"": ""25px solid transparent"",
+    ""borderBottom"": ""25px solid transparent"",
+    ""borderLeft"": ""40px solid black"",
+    ""marginLeft"": ""10px""
+  },
+  ""speaker-body"": {
+    ""position"": ""absolute"",
+    ""top"": ""10px"",
+    ""left"": ""-30px"",
+    ""width"": ""20px"",
+    ""height"": ""30px"",
+    ""backgroundColor"": ""black""
+  },
+  ""wave1"": {
+    ""position"": ""absolute"",
+    ""top"": ""8px"",
+    ""left"": ""50px"",
+    ""width"": ""15px"",
+    ""height"": ""15px"",
+    ""border"": ""4px solid black"",
+    ""borderRadius"": ""50%"",
+    ""borderLeft"": ""none"",
+    ""borderBottom"": ""none"",
+    ""transform"": ""rotate(45deg)""
+  },
+  ""wave2"": {
+    ""position"": ""absolute"",
+    ""top"": ""0px"",
+    ""left"": ""70px"",
+    ""width"": ""25px"",
+    ""height"": ""25px"",
+    ""border"": ""4px solid black"",
+    ""borderRadius"": ""50%"",
+    ""borderLeft"": ""none"",
+    ""borderBottom"": ""none"",
+    ""transform"": ""rotate(45deg)""
+  },
+  ""wave3"": {
+    ""position"": ""absolute"",
+    ""top"": ""-10px"",
+    ""left"": ""95px"",
+    ""width"": ""35px"",
+    ""height"": ""35px"",
+    ""border"": ""4px solid black"",
+    ""borderRadius"": ""50%"",
+    ""borderLeft"": ""none"",
+    ""borderBottom"": ""none"",
+    ""transform"": ""rotate(45deg)""
+  }
+}",Volume_icon.png,
+The system shall display the media list and allow selection of tracks.,Media list,rectangular,400x300,black,,,navigation_zone,,Media list_icon.png,
+"The system shall display the current radio station name, RDS info, and frequency.","Current Radio name, RDS, Freq",rectangular,400x300,black,,,main_content_zone,".radio-signal {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Central circle (signal source) */
+.radio-signal .center-dot {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+/* Antenna legs */
+.radio-signal .leg {
+  width: 10px;
+  height: 60px;
+  background-color: black;
+  position: absolute;
+  bottom: 10px;
+  transform-origin: top center;
+}
+
+.radio-signal .left-leg {
+  transform: rotate(-25deg);
+  left: 35%;
+}
+
+.radio-signal .right-leg {
+  transform: rotate(25deg);
+  right: 35%;
+}
+
+/* Signal waves */
+.radio-signal .wave {
+  position: absolute;
+  border: 4px solid black;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  background: none;
+}
+
+.radio-signal .wave1 {
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  left: 30px;
+}
+
+.radio-signal .wave2 {
+  width: 60px;
+  height: 60px;
+  top: 0px;
+  left: 20px;
+}","Current Radio name, RDS, Freq_icon.png",
+The system shall show the radio source icon.,Radio Source icon,circular,200x200,black,,,main_content_zone,".radio-signal {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Central circle (signal source) */
+.radio-signal .center-dot {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+/* Antenna legs */
+.radio-signal .leg {
+  width: 10px;
+  height: 60px;
+  background-color: black;
+  position: absolute;
+  bottom: 10px;
+  transform-origin: top center;
+}
+
+.radio-signal .left-leg {
+  transform: rotate(-25deg);
+  left: 35%;
+}
+
+.radio-signal .right-leg {
+  transform: rotate(25deg);
+  right: 35%;
+}
+
+/* Signal waves */
+.radio-signal .wave {
+  position: absolute;
+  border: 4px solid black;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  background: none;
+}
+
+.radio-signal .wave1 {
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  left: 30px;
+}
+
+.radio-signal .wave2 {
+  width: 60px;
+  height: 60px;
+  top: 0px;
+  left: 20px;
+}",Radio Source icon_icon.png,
+The system shall display the radio list and allow track selection.,Radio List & Selection of track,Square,400x400,black,,,main_content_zone,,Radio List & Selection of track_icon.png,
+The system shall indicate an ongoing call with caller details.,Ongoing Call,Square,400x400,black,,,main_content_zone,,Ongoing Call_icon.png,
+The system shall notify the user of missed calls.,Missed call,Square,400x400,black,,,main_content_zone,"{
+  ""/* Container for the missed call icon */"": {},
+  "".missed-call-icon"": {
+    ""width"": ""64px"",
+    ""height"": ""64px"",
+    ""display"": ""flex"",
+    ""justify-content"": ""center"",
+    ""align-items"": ""center"",
+    ""border"": ""2px solid black"",      /* Icon border */
+    ""border-radius"": ""12px"",          /* Rounded edges */
+    ""background-color"": ""white"",      /* Icon background */
+    ""box-shadow"": ""2px 2px 6px rgba(0, 0, 0, 0.2)"" /* Subtle shadow */
+  },
+
+  ""/* Actual image inside the icon container */"": {},
+  "".missed-call-icon .icon"": {
+    ""width"": ""100%"",
+    ""height"": ""100%"",
+    ""object-fit"": ""contain"",
+    ""filter"": ""invert(0%)""            /* Keeps icon black on white bg */
+  }
+}",Missed call_icon.png,
+The system shall provide an incoming call popup with accept/reject options.,Incoming call,Square,400x400,black,,,main_content_zone,"{
+  ""/* Container for the incoming call icon */"": {},
+  "".incoming-call-icon"": {
+    ""width"": ""64px"",
+    ""height"": ""64px"",
+    ""display"": ""flex"",
+    ""justify-content"": ""center"",
+    ""align-items"": ""center"",
+    ""border"": ""2px solid black"",      /* Icon border */
+    ""border-radius"": ""12px"",          /* Rounded edges */
+    ""background-color"": ""white"",      /* Icon background */
+    ""box-shadow"": ""2px 2px 6px rgba(0, 0, 0, 0.2)"" /* Subtle shadow */
+  },
+
+  ""/* Actual image inside the icon container */"": {},
+  "".incoming-call-icon .icon"": {
+    ""width"": ""100%"",
+    ""height"": ""100%"",
+    ""object-fit"": ""contain"",
+    ""filter"": ""invert(0%)""            /* Keeps icon black on white bg */
+  }
+}",Incoming call_icon.png,
+The system shall support conference calling and display active participants.,Conferrence call,Square,400x400,black,,,main_content_zone,".conference-call {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: white;
+}
+
+/* Central user (bottom circle) */
+.conference-call .user-center {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Central user's shoulders */
+.conference-call .shoulders-center {
+  width: 60px;
+  height: 20px;
+  background-color: black;
+  border-radius: 10px / 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Top-left user circle */
+.conference-call .user-left {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* Top-left user shoulders */
+.conference-call .shoulders-left {
+  width: 40px;
+  height: 12px;
+  background-color: black;
+  border-radius: 10px / 4px;
+  position: absolute;
+  top: 25px;
+  left: 2px;
+}
+
+/* Top-right user circle */
+.conference-call .user-right {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Top-right user shoulders */
+.conference-call .shoulders-right {
+  width: 40px;
+  height: 12px;
+  background-color: black;
+  border-radius: 10px / 4px;
+  position: absolute;
+  top: 25px;
+  right: 2px;
+}",Conferrence call_icon.png,
+The system shall display the phone book and call history with call initiation support.,"Phone Book list, Missed call list & Call initiation",rectangular,400x300,black,,,main_content_zone,,"Phone Book list, Missed call list & Call initiation_icon.png",
+The system shall synchronize and project navigation maps.,Navigation map projection & sync,Square,400x400,black,,,main_content_zone,"{
+  ""component"": ""NavigationMapSyncIcon"",
+  ""style"": {
+    ""position"": ""relative"",
+    ""width"": ""120px"",
+    ""height"": ""120px"",
+    ""borderRadius"": ""50%"",
+    ""border"": ""4px solid black"",
+    ""boxSizing"": ""border-box"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center"",
+    ""backgroundColor"": ""white""
+  },
+  ""elements"": {
+    ""compass-needle"": {
+      ""position"": ""absolute"",
+      ""width"": ""4px"",
+      ""height"": ""60px"",
+      ""backgroundColor"": ""black"",
+      ""transformOrigin"": ""bottom center"",
+      ""transform"": ""rotate(45deg)""
+    },
+    ""sync-arrow1"": {
+      ""position"": ""absolute"",
+      ""top"": ""20px"",
+      ""left"": ""20px"",
+      ""width"": ""0"",
+      ""height"": ""0"",
+      ""borderTop"": ""10px solid transparent"",
+      ""borderBottom"": ""10px solid transparent"",
+      ""borderLeft"": ""15px solid black"",
+      ""transform"": ""rotate(45deg)""
+    },
+    ""sync-arrow2"": {
+      ""position"": ""absolute"",
+      ""bottom"": ""20px"",
+      ""right"": ""20px"",
+      ""width"": ""0"",
+      ""height"": ""0"",
+      ""borderTop"": ""10px solid transparent"",
+      ""borderBottom"": ""10px solid transparent"",
+      ""borderRight"": ""15px solid black"",
+      ""transform"": ""rotate(-135deg)""
+    }
+  }
+}",Navigation map projection & sync_icon.png,
+The system shall display Turn-By-Turn (TBT) icons for navigation guidance.,TBT icons,Square,100x100,black,,,main_content_zone,,TBT icons_icon.png,
+The system shall allow selection of destinations from a stored list.,Destination list & selection,rectangular,200x400,black,,,main_content_zone,,Destination list & selection_icon.png,
+The system shall support multiple languages with user selection.,Language,Square,100x300,black,,,notification_zone,,Language_icon.png,
+"The system shall allow selection of measurement units (e.g., km/miles, L/gal).",Unit,Square,100x300,black,,,notification_zone,,Unit_icon.png,
+The system shall allow the user to select and switch between different drive modes.,Drive mode,circular,200x200,black,,,header_zone,,Drive mode_icon.png,
+The infotainment system shall provide a menu bar for quick access to main functions.,Menu Bar,rectangular,80x300,black,,,navigation_zone,,Menu Bar_icon.png,
+The system shall include a hierarchical notification_zone with multiple levels.,notification_zone - Level 1,Square,300x500,black,,,notification_zone,,notification_zone - Level 1_icon.png,
+The system shall provide detailed configuration options in Level 2 settings.,notification_zone - Level 2,Square,300x500,black,,,notification_zone,,notification_zone - Level 2_icon.png,
+The system shall allow fine-tuning of system settings in Level 3.,notification_zone - Level 3,Square,300x500,black,,,notification_zone,,notification_zone - Level 3_icon.png,
+The system shall support advanced configurations in Level 4 settings.,notification_zone - Level 4,Square,300x500,black,,,notification_zone,,notification_zone - Level 4_icon.png,
+The system shall display Adaptive Cruise Control (ACC) status.,Adaptive Cruise Control,rectangular,150x300,black,,,main_content_zone,,Adaptive Cruise Control_icon.png,
+The system shall provide visual feedback for Forward Collision Warning (FCW).,Forward Collision Warning Indication,Square,150x150,black,,,main_content_zone,".fcw-icon {
+  position: relative;
+  width: 120px;
+  height: 80px;
+}
+
+/* Car shape */
+.car {
+  width: 60px;
+  height: 30px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 25px;
+}
+
+/* Warning lines (simulating radar or alert effect) */
+.warning-lines .line {
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  left: 70px;
+  top: 36px;
+}
+
+.warning-lines .one { transform: rotate(0deg) translateX(0); top: 26px; left: 70px; }
+.warning-lines .two { transform: rotate(10deg) translateX(0); top: 36px; left: 75px; }
+.warning-lines .three { transform: rotate(20deg) translateX(0); top: 46px; left: 80px; }
+
+/* Impact burst or triangle warning */
+.impact {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid red;
+  left: 95px;
+  top: 30px;
+}",Forward Collision Warning Indication_icon.png,
+The system shall indicate blind spot detection warnings.,Blind Spot Indication,rectangular,150x300,black,,,main_content_zone,"{
+  ""/* Container for the blind spot indication icon */"": {},
+  "".blind-spot-icon"": {
+    ""width"": ""64px"",
+    ""height"": ""64px"",
+    ""display"": ""flex"",
+    ""justify-content"": ""center"",
+    ""align-items"": ""center"",
+    ""border"": ""2px solid black"",      /* Icon border */
+    ""border-radius"": ""12px"",          /* Rounded edges */
+    ""background-color"": ""white"",      /* Icon background */
+    ""box-shadow"": ""2px 2px 6px rgba(0, 0, 0, 0.2)"" /* Subtle shadow */
+  },
+
+  ""/* Actual image inside the icon container */"": {},
+  "".blind-spot-icon .icon"": {
+    ""width"": ""100%"",
+    ""height"": ""100%"",
+    ""object-fit"": ""contain"",
+    ""filter"": ""invert(0%)""            /* Keeps icon black on white bg */
+  }
+}",Blind Spot Indication_icon.png,
+The system shall support multi-lane highway visualization.,Multilane highway display,rectangular,300x500,black,,,main_content_zone,,Multilane highway display_icon.png,
+The system shall provide Lane Keep Assist (LKA) indications.,Lane Keep Assist,rectangular,150x300,black,,,main_content_zone,"{
+  ""component"": ""LaneKeepAssistIcon"",
+  ""style"": {
+    ""position"": ""relative"",
+    ""width"": ""120px"",
+    ""height"": ""120px"",
+    ""backgroundColor"": ""white"",
+    ""display"": ""flex"",
+    ""justifyContent"": ""center"",
+    ""alignItems"": ""center""
+  },
+  ""elements"": {
+    ""center-lane"": {
+      ""position"": ""absolute"",
+      ""width"": ""4px"",
+      ""height"": ""100%"",
+      ""backgroundColor"": ""black""
+    },
+    ""left-lane"": {
+      ""position"": ""absolute"",
+      ""left"": ""30px"",
+      ""width"": ""4px"",
+      ""height"": ""100%"",
+      ""backgroundColor"": ""black"",
+      ""transform"": ""skewY(10deg)""
+    },
+    ""right-lane"": {
+      ""position"": ""absolute"",
+      ""right"": ""30px"",
+      ""width"": ""4px"",
+      ""height"": ""100%"",
+      ""backgroundColor"": ""black"",
+      ""transform"": ""skewY(-10deg)""
+    },
+    ""car"": {
+      ""position"": ""absolute"",
+      ""width"": ""30px"",
+      ""height"": ""40px"",
+      ""border"": ""4px solid black"",
+      ""borderRadius"": ""8px"",
+      ""backgroundColor"": ""white""
+    }
+  }
+}",Lane Keep Assist_icon.png,
+The system shall display Lane Change Assist (LCA) status.,Lane Change Assist,rectangular,150x300,black,,,main_content_zone,"{
+  ""/* Container for the lane change assist icon */"": {},
+  "".lane-change-icon"": {
+    ""width"": ""64px"",
+    ""height"": ""64px"",
+    ""display"": ""flex"",
+    ""justify-content"": ""center"",
+    ""align-items"": ""center"",
+    ""border"": ""2px solid black"",      /* Icon border */
+    ""border-radius"": ""12px"",          /* Rounded edges */
+    ""background-color"": ""white"",      /* Icon background */
+    ""box-shadow"": ""2px 2px 6px rgba(0, 0, 0, 0.2)"" /* Subtle shadow */
+  },
+
+  ""/* Actual image inside the icon container */"": {},
+  "".lane-change-icon .icon"": {
+    ""width"": ""100%"",
+    ""height"": ""100%"",
+    ""object-fit"": ""contain"",
+    ""filter"": ""invert(0%)""            /* Keeps icon black on white bg */
+  }
+}",Lane Change Assist_icon.png,
+The system shall provide Lane Departure Warning (LDW) alerts.,Lane Departure Function Display,rectangular,150x300,black,,,main_content_zone,,Lane Departure Function Display_icon.png,
+The system shall notify the driver of attention-related alerts.,Driver Attention Assistance Alerts,rectangular,150x300,black,,,main_content_zone,,Driver Attention Assistance Alerts_icon.png,
+The system shall display Autonomous Emergency Braking (AEB) warnings.,Autonomous Emergency Braking System,rectangular,150x300,black,,,main_content_zone,".aeb-telltale {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 2px solid black; /* Outer circle border */
+  border-radius: 50%; /* Circular shape */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Car shape */
+.aeb-telltale .car {
+  width: 20px;
+  height: 14px;
+  background-color: black;
+  position: relative;
+  border-radius: 2px;
+}
+
+/* Car roof */
+.aeb-telltale .car::before {
+  content: """";
+  position: absolute;
+  top: -6px;
+  left: 3px;
+  width: 14px;
+  height: 6px;
+  background-color: black;
+  border-radius: 2px 2px 0 0;
+}
+
+/* Car wheels */
+.aeb-telltale .wheel-left,
+.aeb-telltale .wheel-right {
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -4px;
+}
+
+.aeb-telltale .wheel-left {
+  left: 2px;
+}
+
+.aeb-telltale .wheel-right {
+  right: 2px;
+}
+
+/* Alert lines */
+.aeb-telltale .alert-left,
+.aeb-telltale .alert-right {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: red;
+  top: 15%;
+}
+
+.aeb-telltale .alert-left {
+  left: -12px;
+  transform: rotate(-30deg);
+}
+
+.aeb-telltale .alert-right {
+  right: -12px;
+  transform: rotate(30deg);
+}",Autonomous Emergency Braking System_icon.png,
+The system shall indicate window defrost activation.,Window defrost indication,Square,100x100,black,,,main_content_zone,"{
+  ""window-defrost-icon"": {
+    ""position"": ""relative"",
+    ""width"": ""60px"",
+    ""height"": ""40px"",
+    ""borderTop"": ""6px solid black"",
+    ""borderLeft"": ""6px solid black"",
+    ""borderRight"": ""6px solid black"",
+    ""borderRadius"": ""0 0 60px 60px"",
+    ""overflow"": ""hidden"",
+    ""backgroundColor"": ""transparent""
+  },
+  ""defrost-arrow"": {
+    ""position"": ""absolute"",
+    ""bottom"": ""8px"",
+    ""left"": ""50%"",
+    ""width"": ""10px"",
+    ""height"": ""20px"",
+    ""backgroundColor"": ""black"",
+    ""transform"": ""translateX(-50%) rotate(-30deg)""
+  },
+  ""defrost-arrow::before"": {
+    ""content"": ""''"",
+    ""position"": ""absolute"",
+    ""top"": ""-6px"",
+    ""left"": ""-5px"",
+    ""width"": ""0"",
+    ""height"": ""0"",
+    ""borderLeft"": ""10px solid transparent"",
+    ""borderRight"": ""10px solid transparent"",
+    ""borderBottom"": ""10px solid black""
+  },
+  ""defrost-arrow-1"": {
+    ""left"": ""20%""
+  },
+  ""defrost-arrow-2"": {
+    ""left"": ""50%""
+  },
+  ""defrost-arrow-3"": {
+    ""left"": ""80%""
+  }
+}",Window defrost indication_icon.png,
+The system shall provide brake lining wear indications.,Brake lining indication,Square,100x100,black,,,main_content_zone,"{
+  ""/* Container for the brake lining indication icon */"": {},
+  "".brake-indicator-icon"": {
+    ""width"": ""64px"",
+    ""height"": ""64px"",
+    ""display"": ""flex"",
+    ""justify-content"": ""center"",
+    ""align-items"": ""center"",
+    ""border"": ""2px solid black"",      /* Icon border */
+    ""border-radius"": ""12px"",          /* Rounded edges */
+    ""background-color"": ""white"",      /* Icon background */
+    ""box-shadow"": ""2px 2px 6px rgba(0, 0, 0, 0.2)"" /* Subtle shadow */
+  },
+
+  ""/* Actual image inside the icon container */"": {},
+  "".brake-indicator-icon .icon"": {
+    ""width"": ""100%"",
+    ""height"": ""100%"",
+    ""object-fit"": ""contain"",
+    ""filter"": ""invert(0%)""            /* Keeps icon black on white bg */
+  }
+}",Brake lining indication_icon.png,
+The system shall allow the user to set ACC speed limits.,ACC Speed setting,Square,100x100,black,,,main_content_zone,,ACC Speed setting_icon.png,
+The system shall display detected objects on driving lanes.,Objects display on lanes,rectangular,300x500,black,,,main_content_zone,,Objects display on lanes_icon.png,
+"The system shall visualize lanes, including curves.",Lane with curve,rectangular,300x500,black,,,main_content_zone,,Lane with curve_icon.png,
+The system shall support Trailer Stability Assist (TSA) display.,TSA,rectangular,150x300,black,,,main_content_zone,,TSA_icon.png,
+The system shall provide Auto Parking Assist (APA) status.,APA,rectangular,150x300,black,,,main_content_zone,,APA_icon.png,
+The system shall support 2D multi-color themes.,Multi color Themes (2D),rectangular,300x500,black,,,navigation_zone,,Multi color Themes (2D)_icon.png,
+The system shall support 3D multi-color themes.,Multi color Themes (3D),rectangular,300x500,black,,,navigation_zone,,Multi color Themes (3D)_icon.png,
+The system shall automatically switch themes based on selected drive mode.,Drive mode based theme switch (3 Drive modes),Square,100x100,black,,,navigation_zone,,Drive mode based theme switch (3 Drive modes)_icon.png,
+The system shall support day and night mode adjustments.,Day &Night mode,Square,100x100,black,,,navigation_zone,".day-night-icon {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  border: 10px solid black; /* Outer sun ring */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Moon shape - black crescent */
+.day-night-icon::before {
+  content: """";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border-radius: 50%;
+  left: 30px;
+  top: 30px;
+  z-index: 1;
+}
+
+.day-night-icon::after {
+  content: """";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  left: 40px;
+  top: 30px;
+  z-index: 2;
+}
+
+/* Sun rays */
+.sun-ray {
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  background-color: black;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: center bottom;
+}
+
+.sun-ray:nth-child(2) { transform: rotate(45deg) translateX(-50%); top: 10%; left: 80%; }
+.sun-ray:nth-child(3) { transform: rotate(90deg) translateX(-50%); top: 50%; left: 100%; }
+.sun-ray:nth-child(4) { transform: rotate(135deg) translateX(-50%); top: 80%; left: 80%; }
+.sun-ray:nth-child(5) { transform: rotate(180deg) translateX(-50%); top: 100%; left: 50%; }
+.sun-ray:nth-child(6) { transform: rotate(225deg) translateX(-50%); top: 80%; left: 20%; }
+.sun-ray:nth-child(7) { transform: rotate(270deg) translateX(-50%); top: 50%; left: 0%; }
+.sun-ray:nth-child(8) { transform: rotate(315deg) translateX(-50%); top: 10%; left: 20%; }",Day &Night mode_icon.png,
+The system shall allow downloading and applying new themes.,Downloadable theme,Square,100x100,black,,,navigation_zone,,Downloadable theme_icon.png,
+The system shall display a compass for directional guidance.,Compass,circular,300x300,black,,,main_content_zone,".compass {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: white;
+  border: 6px solid black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Outer Ring */
+.compass::before {
+  content: """";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border: 4px solid dimgray;
+  box-sizing: border-box;
+}
+
+/* Direction Labels */
+.direction {
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.direction.n { top: 8px; left: 50%; transform: translateX(-50%); }
+.direction.s { bottom: 8px; left: 50%; transform: translateX(-50%); }
+.direction.e { right: 8px; top: 50%; transform: translateY(-50%); }
+.direction.w { left: 8px; top: 50%; transform: translateY(-50%); }
+
+/* Needles */
+.needle {
+  position: absolute;
+  width: 4px;
+  height: 45%;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+}
+
+.needle.n { transform: translate(-50%, -100%) rotate(0deg); background-color: white; }
+.needle.s { transform: translate(-50%, -100%) rotate(180deg); }
+.needle.e { transform: translate(-50%, -100%) rotate(90deg); background-color: white; }
+.needle.w { transform: translate(-50%, -100%) rotate(-90deg); }",Compass_icon.png,
+The system shall provide a calendar function.,Calender,Square,300x300,black,,,main_content_zone,".calendar {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 16px;
+  position: relative;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+/* Top binding section (header area) */
+.calendar::before {
+  content: """";
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Top rings */
+.calendar .ring {
+  width: 16px;
+  height: 24px;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+}
+
+.calendar .ring.left {
+  left: 40px;
+}
+
+.calendar .ring.right {
+  right: 40px;
+}
+
+/* Date grid */
+.calendar .grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+  padding: 16px;
+}
+
+.calendar .grid .day {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: black;
+  border-radius: 4px;
+}",Calender_icon.png,
+The system shall display G-Force data for performance monitoring.,G-Force,circular,300x300,black,,,main_content_zone,,G-Force_icon.png,
+The system shall support multiple non-Arabic languages.,Languages (Non Arabic),rectangular,150x300,black,,,navigation_zone,"{
+  ""component"": ""LanguagesIcon"",
+  ""style"": {
+    ""position"": ""relative"",
+    ""width"": ""120px"",
+    ""height"": ""80px"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""space-between"",
+    ""backgroundColor"": ""white""
+  },
+  ""elements"": {
+    ""left-bubble"": {
+      ""position"": ""relative"",
+      ""width"": ""50px"",
+      ""height"": ""50px"",
+      ""border"": ""4px solid black"",
+      ""borderRadius"": ""8px"",
+      ""display"": ""flex"",
+      ""alignItems"": ""center"",
+      ""justifyContent"": ""center"",
+      ""fontWeight"": ""bold"",
+      ""fontSize"": ""24px"",
+      ""content"": ""'A'""
+    },
+    ""right-bubble"": {
+      ""position"": ""relative"",
+      ""width"": ""60px"",
+      ""height"": ""60px"",
+      ""border"": ""4px solid black"",
+      ""borderRadius"": ""8px"",
+      ""display"": ""flex"",
+      ""alignItems"": ""center"",
+      ""justifyContent"": ""center"",
+      ""fontWeight"": ""bold"",
+      ""fontSize"": ""24px"",
+      ""content"": ""'?'""
+    },
+    ""arrow"": {
+      ""position"": ""absolute"",
+      ""bottom"": ""-12px"",
+      ""left"": ""48px"",
+      ""width"": ""20px"",
+      ""height"": ""20px"",
+      ""borderLeft"": ""4px solid black"",
+      ""borderBottom"": ""4px solid black"",
+      ""transform"": ""rotate(-45deg)""
+    }
+  }
+}",Languages (Non Arabic)_icon.png,
+The system shall support Arabic language display.,Languages (Arabic),rectangular,150x300,black,,,navigation_zone,"{
+  ""component"": ""LanguagesIcon"",
+  ""style"": {
+    ""position"": ""relative"",
+    ""width"": ""120px"",
+    ""height"": ""80px"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""space-between"",
+    ""backgroundColor"": ""white""
+  },
+  ""elements"": {
+    ""left-bubble"": {
+      ""position"": ""relative"",
+      ""width"": ""50px"",
+      ""height"": ""50px"",
+      ""border"": ""4px solid black"",
+      ""borderRadius"": ""8px"",
+      ""display"": ""flex"",
+      ""alignItems"": ""center"",
+      ""justifyContent"": ""center"",
+      ""fontWeight"": ""bold"",
+      ""fontSize"": ""24px"",
+      ""content"": ""'A'""
+    },
+    ""right-bubble"": {
+      ""position"": ""relative"",
+      ""width"": ""60px"",
+      ""height"": ""60px"",
+      ""border"": ""4px solid black"",
+      ""borderRadius"": ""8px"",
+      ""display"": ""flex"",
+      ""alignItems"": ""center"",
+      ""justifyContent"": ""center"",
+      ""fontWeight"": ""bold"",
+      ""fontSize"": ""24px"",
+      ""content"": ""'?'""
+    },
+    ""arrow"": {
+      ""position"": ""absolute"",
+      ""bottom"": ""-12px"",
+      ""left"": ""48px"",
+      ""width"": ""20px"",
+      ""height"": ""20px"",
+      ""borderLeft"": ""4px solid black"",
+      ""borderBottom"": ""4px solid black"",
+      ""transform"": ""rotate(-45deg)""
+    }
+  }
+}",Languages (Arabic)_icon.png,
+The system shall run a display test during diagnostics.,Display Test,rectangular,200x400,black,,,navigation_zone,,Display Test_icon.png,
+The system shall synchronize chimes with warning indications.,Chime sync,rectangular,200x400,black,,,navigation_zone,,Chime sync_icon.png,
+The system shall support additional variant handling.,Variant Handling (additionally 1 variant),rectangular,200x400,black,,,navigation_zone,,Variant Handling (additionally 1 variant)_icon.png,
+The system shall manage infotainment state transitions.,State machine,Square,200x400,black,,,navigation_zone,,State machine_icon.png,
+The system shall play a welcome/startup animation.,Welcome/Startup Animation,rectangular,300x500,black,,,header_zone,,Welcome/Startup Animation_icon.png,
+The system shall display a shutdown/goodbye animation.,Shutdown/Goodbye animation,rectangular,300x500,black,,,main_content_zone,,Shutdown/Goodbye animation_icon.png,
+The system shall support list animations for UI elements.,List Animations,Square,300x300,black,,,main_content_zone,,List Animations_icon.png,
+The system shall provide smooth screen transition animations.,Screen Transistion animation,rectangular,300x500,black,,,main_content_zone,,Screen Transistion animation_icon.png,
+The system shall display an ignition on/off animation.,Ign on/off animation,circular,300x300,black,,,main_content_zone,,Ign on/off animation_icon.png,
+The system should display the total accumulated travel distance.,Odometer,circular,200x200,black,,,main_content_zone,".odometer-container { 
+  width: 300px; 
+  margin: 40px auto; 
+} 
+ 
+.gauge-arc { 
+  position: relative; 
+  width: 100%; 
+  height: 150px; 
+  border-top-left-radius: 150px; 
+  border-top-right-radius: 150px; 
+  border: 10px solid black; 
+  border-bottom: none; 
+  overflow: hidden; 
+} 
+ 
+.tick { 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  width: 6px; 
+  height: 25px; 
+  background-color: black; 
+  transform-origin: bottom center; 
+} 
+ 
+.needle { 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  width: 6px; 
+  height: 80px; 
+  background-color: black; 
+  transform-origin: bottom center; 
+  transition: transform 0.5s ease-in-out; 
+} 
+ 
+.center-circle { 
+  position: absolute; 
+  bottom: -10px; 
+  left: 50%; 
+  width: 30px; 
+  height: 30px; 
+  background-color: white; 
+  border: 6px solid black; 
+  border-radius: 50%; 
+  transform: translateX(-50%); 
+} 
+ 
+.display-box { 
+  width: 80px; 
+  height: 25px; 
+  margin: 20px auto 0; 
+  border: 5px solid black; 
+  border-radius: 5px; 
+} 
+",Odometer_icon.png,
+Users should be able to view the selected driving mode.,Drive mode,Square,100x100,black,,,header_zone,,Drive mode_icon.png,
+The interface should indicate the active terrain setting.,Terrian Mode,Square,100x100,grey,,,header_zone,,Terrian Mode_icon.png,
+A timekeeping element should display current time information.,Digital Clock,Square,100x100,black,,,header_zone,,Digital Clock_icon.png,
+The system should present the ambient temperature outside the vehicle.,Outside Temperature,Square,100x100,black,,,header_zone,"{
+  ""component"": ""OutsideTemperature"",
+  ""style"": {
+    ""width"": ""80px"",
+    ""height"": ""200px"",
+    ""borderRadius"": ""12px"",                   // Rounded corners for a softer look
+    ""backgroundColor"": ""white"",
+    ""border"": ""2px solid black"",
+    ""display"": ""flex"",
+    ""flexDirection"": ""column"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center"",
+    ""padding"": ""10px"",
+    ""boxShadow"": ""0px 4px 8px rgba(0, 0, 0, 0.1)"",
+    ""fontSize"": ""40px"",
+    ""color"": ""black"",
+    ""margin"": ""10px""
+  },
+  ""icon"": ""?????"",
+  ""label"": {
+    ""text"": ""Outside Temp"",
+    ""style"": {
+      ""fontSize"": ""12px"",
+      ""marginTop"": ""8px"",
+      ""color"": ""black""
+    }
+  }
+}",Outside Temperature_icon.png,
+A numeric representation of the current vehicle velocity should be provided.,Digital Speed,rectangular,300x400,black,,,main_content_zone,,Digital Speed_icon.png,
+The system should indicate the engine speed in digital format.,Digital RPM,rectangular,300x400,black,,,main_content_zone,".DigitalRPM { 
+  width: 300px; 
+  height: 150px; 
+  position: relative; 
+  margin: 40px auto; 
+} 
+ 
+.gauge { 
+  width: 100%; 
+  height: 100%; 
+  border-radius: 100% 100% 0 0; 
+  background: transparent; 
+  position: relative; 
+} 
+ 
+.segments { 
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  top: 0; 
+  left: 0; 
+} 
+ 
+.segment { 
+  width: 6px; 
+  height: 20px; 
+  background-color: red; 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  transform-origin: bottom center; 
+} 
+ 
+.needle { 
+  width: 4px; 
+  height: 120px; 
+  background-color: red; 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  transform-origin: bottom center; 
+  transition: transform 0.3s ease-in-out; 
+} 
+ 
+.center-dot { 
+  width: 20px; 
+  height: 20px; 
+  background-color: black; 
+  border-radius: 50%; 
+  position: absolute; 
+  bottom: 0; 
+  left: calc(50% - 10px); 
+} ",Digital RPM_icon.png,
+A digital readout should show the current power output.,Digital Power,rectangular,300x400,black,,,main_content_zone,,Digital Power_icon.png,
+The interface should indicate the active transmission state.,Gear (PRNDL),Square,150x150,black,,,header_zone,".gear-selector {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+/* Labels: P R N D L */
+.gear-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  margin-right: 20px;
+}
+
+/* Vertical Track */
+.gear-track {
+  width: 40px;
+  height: 180px;
+  background-color: lightgray;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Gear Slider (movable) */
+.gear-slider {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 0; /* adjust dynamically via JS if needed */
+}",Gear (PRNDL)_icon.png,
+The system should display the current manual gear selection.,Gear (M1 to Mx),Square,150x150,black,,,header_zone,,Gear (M1 to Mx)_icon.png,
+A visual cue should be available for optimal gear shifts.,Gear Shift Recommendation,Square,150x150,grey,,,main_content_zone,,Gear Shift Recommendation_icon.png,
+The interface should respond to driver-initiated gear shifts.,Paddle Shifter,Square,80x80,grey,,,main_content_zone,,Paddle Shifter_icon.png,
+A graphical element should represent the current vehicle speed.,Speedometer,circular,300x300,blue,,,main_content_zone,".speedometer-wrapper { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 300px; 
+  margin: 0 auto; 
+} 
+ 
+.speedometer { 
+  position: relative; 
+  width: 280px; 
+  height: 280px; 
+  border: 2px solid black; 
+  border-radius: 50%; 
+  background-color: transparent; 
+  overflow: hidden; 
+} 
+ 
+.ticks { 
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  top: 0; 
+  left: 0; 
+} 
+ 
+.tick { 
+  width: 2px; 
+  height: 15px; 
+  background-color: black; 
+  position: absolute; 
+  top: 10px; 
+  left: 50%; 
+  transform-origin: center bottom; 
+} 
+ 
+.tick.major { 
+  height: 25px; 
+  width: 3px; 
+} 
+ 
+.needle { 
+  width: 4px; 
+  height: 120px; 
+  background-color: black; 
+  position: absolute; 
+  top: 40px; 
+  left: 50%; 
+  transform-origin: bottom center; 
+  transition: transform 0.3s ease-in-out; 
+} 
+ 
+.center-dot { 
+  width: 20px; 
+  height: 20px; 
+  background-color: black; 
+  border-radius: 50%; 
+  position: absolute; 
+  top: 130px; 
+  left: 130px; 
+} 
+ 
+.unit-box { 
+  margin-top: 10px; 
+  border: 1px solid black; 
+  width: 80px; 
+  height: 30px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+} 
+ 
+.unit { 
+  font-weight: bold; 
+  font-size: 14px; 
+} 
+ 
+.speed-label { 
+  margin-top: 5px; 
+  font-size: 18px; 
+  font-weight: bold; 
+} 
+",Speedometer_icon.png,
+A graphical representation should indicate engine revolutions.,Tachometer,circular,200x200,blue,,,main_content_zone,"{
+  ""tachometer-wrapper"": {
+    ""position"": ""relative"",
+    ""width"": ""200px"",
+    ""height"": ""200px"",
+    ""borderRadius"": ""50%"",
+    ""border"": ""12px solid black"",
+    ""boxSizing"": ""border-box"",
+    ""overflow"": ""hidden""
+  },
+  ""center-dot"": {
+    ""position"": ""absolute"",
+    ""top"": ""50%"",
+    ""left"": ""50%"",
+    ""width"": ""20px"",
+    ""height"": ""20px"",
+    ""backgroundColor"": ""black"",
+    ""borderRadius"": ""50%"",
+    ""transform"": ""translate(-50%, -50%)""
+  },
+  ""needle"": {
+    ""position"": ""absolute"",
+    ""top"": ""50%"",
+    ""left"": ""50%"",
+    ""width"": ""6px"",
+    ""height"": ""80px"",
+    ""backgroundColor"": ""black"",
+    ""transformOrigin"": ""bottom center"",
+    ""transform"": ""translateX(-50%) rotate(-45deg)""
+  },
+  ""tick1"": {
+    ""position"": ""absolute"",
+    ""top"": ""10px"",
+    ""left"": ""50%"",
+    ""width"": ""4px"",
+    ""height"": ""20px"",
+    ""backgroundColor"": ""black"",
+    ""transform"": ""translateX(-50%) rotate(0deg)"",
+    ""transformOrigin"": ""bottom center""
+  },
+  ""tick2"": {
+    ""position"": ""absolute"",
+    ""top"": ""20px"",
+    ""left"": ""85%"",
+    ""width"": ""4px"",
+    ""height"": ""20px"",
+    ""backgroundColor"": ""black"",
+    ""transform"": ""rotate(45deg)"",
+    ""transformOrigin"": ""bottom center""
+  },
+  ""tick3"": {
+    ""position"": ""absolute"",
+    ""top"": ""50%"",
+    ""left"": ""95%"",
+    ""width"": ""4px"",
+    ""height"": ""20px"",
+    ""backgroundColor"": ""black"",
+    ""transform"": ""rotate(90deg)"",
+    ""transformOrigin"": ""bottom center""
+  },
+  ""tick4"": {
+    ""position"": ""absolute"",
+    ""top"": ""85%"",
+    ""left"": ""85%"",
+    ""width"": ""4px"",
+    ""height"": ""20px"",
+    ""backgroundColor"": ""black"",
+    ""transform"": ""rotate(135deg)"",
+    ""transformOrigin"": ""bottom center""
+  }
+}",Tachometer_icon.png,
+A visual gauge should display the current fuel level.,Fuel,rectangular,300x150,black,,,header_zone,".fuel-wrapper { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 280px; 
+  margin: auto; 
+} 
+ 
+.fuel-gauge { 
+  position: relative; 
+  width: 250px; 
+  height: 130px; 
+  border-top-left-radius: 125px; 
+  border-top-right-radius: 125px; 
+  background: transparent; 
+  overflow: visible; 
+} 
+ 
+.ticks { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+} 
+ 
+.tick { 
+  width: 3px; 
+  height: 20px; 
+  background-color: #333; 
+  position: absolute; 
+  top: 0; 
+  left: 50%; 
+  transform-origin: center bottom; 
+} 
+ 
+.needle { 
+  width: 4px; 
+  height: 100px; 
+  background-color: #c40000; 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  transform-origin: bottom center; 
+  transition: transform 0.4s ease-in-out; 
+} 
+ 
+.center-dot { 
+  width: 20px; 
+  height: 20px; 
+  background-color: #333; 
+  border-radius: 50%; 
+  position: absolute; 
+  bottom: 0; 
+  left: calc(50% - 10px); 
+} 
+ 
+.label { 
+  position: absolute; 
+  font-weight: bold; 
+  font-size: 20px; 
+} 
+ 
+.e-label { 
+  bottom: 0; 
+  left: 10px; 
+  color: #b30000; 
+} 
+ 
+.f-label { 
+  bottom: 0; 
+  right: 10px; 
+  color: #333; 
+} 
+ 
+.fuel-icon { 
+  font-size: 20px; 
+  position: absolute; 
+  top: 35px; 
+  left: 50%; 
+ 
+",Fuel_icon.png,
+An indicator should show the engine coolant temperature.,Coolant,rectangular,100x150,black,,,main_content_zone,".coolant-icon {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Base container representing the thermometer pipe */
+.coolant-icon .thermo-body {
+  width: 20px;
+  height: 70px;
+  background-color: black;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Thermometer bulb at bottom */
+.coolant-icon .thermo-bulb {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Heat waves (zigzag lines above) */
+.coolant-icon .wave {
+  width: 40px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+/* Individual wave positions */
+.coolant-icon .wave1 {
+  top: 5px;
+}
+.coolant-icon .wave2 {
+  top: 15px;
+}
+.coolant-icon .wave3 {
+  top: 25px;
+}",Coolant_icon.png,
+A display should reflect the real-time power consumption.,Power,Square,150x150,black,,,main_content_zone,"{
+  ""car-body"": {
+    ""position"": ""relative"",
+    ""width"": ""120px"",
+    ""height"": ""60px"",
+    ""border"": ""4px solid black"",
+    ""borderRadius"": ""10px"",
+    ""borderTopLeftRadius"": ""30px"",
+    ""margin"": ""20px auto"",
+    ""boxSizing"": ""border-box""
+  },
+  ""car-door"": {
+    ""position"": ""absolute"",
+    ""top"": ""20px"",
+    ""left"": ""20px"",
+    ""width"": ""20px"",
+    ""height"": ""15px"",
+    ""border"": ""3px solid black"",
+    ""borderRadius"": ""4px"",
+    ""boxSizing"": ""border-box""
+  },
+  ""car-front"": {
+    ""position"": ""absolute"",
+    ""top"": ""5px"",
+    ""left"": ""-25px"",
+    ""width"": ""30px"",
+    ""height"": ""30px"",
+    ""border"": ""4px solid black"",
+    ""borderRight"": ""none"",
+    ""borderRadius"": ""10px 0 0 10px"",
+    ""boxSizing"": ""border-box""
+  },
+  ""bolt-circle"": {
+    ""position"": ""absolute"",
+    ""top"": ""-30px"",
+    ""right"": ""-40px"",
+    ""width"": ""60px"",
+    ""height"": ""60px"",
+    ""border"": ""4px solid black"",
+    ""borderRadius"": ""50%"",
+    ""boxSizing"": ""border-box""
+  },
+  ""bolt"": {
+    ""position"": ""absolute"",
+    ""top"": ""-18px"",
+    ""right"": ""-20px"",
+    ""width"": ""0"",
+    ""height"": ""0"",
+    ""borderLeft"": ""10px solid transparent"",
+    ""borderRight"": ""10px solid transparent"",
+    ""borderBottom"": ""20px solid black"",
+    ""transform"": ""rotate(25deg)""
+  },
+  ""bolt-tail"": {
+    ""position"": ""absolute"",
+    ""top"": ""-5px"",
+    ""right"": ""-5px"",
+    ""width"": ""0"",
+    ""height"": ""0"",
+    ""borderLeft"": ""6px solid transparent"",
+    ""borderRight"": ""6px solid transparent"",
+    ""borderTop"": ""15px solid black"",
+    ""transform"": ""rotate(25deg)""
+  }
+}",Power_icon.png,
+An indicator should show the regenerative energy being captured.,Regeneration,Square,150x150,black,,,main_content_zone,,Regeneration_icon.png,
+A gauge should represent the remaining battery charge level.,Battery State of Charge Gauge,square,150x300,black,,,main_content_zone,".battery-gauge {
+  width: 50px;
+  height: 30px;
+  border: 3px solid black; /* Outer battery body */
+  border-radius: 4px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+/* Battery terminal */
+.battery-gauge::after {
+  content: """";
+  position: absolute;
+  right: -6px;
+  top: 30%;
+  width: 4px;
+  height: 40%;
+  background-color: black;
+  border-radius: 1px;
+}
+
+/* Battery level bars */
+.battery-gauge .bar {
+  height: 100%;
+  background-color: black;
+  margin-left: 2px;
+  flex: 1;
+  border-radius: 1px;
+}
+
+/* Empty space to simulate charge level */
+.battery-gauge .bar.empty {
+  background-color: transparent;
+  border: 1px solid black;
+}",Battery State of Charge Gauge_icon.png,
+An indicator should show the level of Diesel Exhaust Fluid.,UREA (DEF) Gauge,rectangular,150x300,black,,,main_content_zone,,UREA (DEF) Gauge_icon.png,
+A visual representation should indicate the remaining CNG level.,CNG Gauge,rectangular,190x280,black,,,main_content_zone,,CNG Gauge_icon.png,
+A tracking system should record the distance traveled in trip mode A.,Trip A - Distance,Square,100x100,blue,,,main_content_zone,,Trip A - Distance_icon.png,
+An element should display fuel efficiency for trip A.,Trip A - Mileage,Square,100x100,blue,,,main_content_zone,,Trip A - Mileage_icon.png,
+The system should log the duration of trip A.,Trip A - Time,Square,100x100,blue,,,main_content_zone,,Trip A - Time_icon.png,
+An indicator should display the average speed for trip A.,Trip A - Avg. Speed,Square,100x100,blue,,,main_content_zone,,Trip A - Avg. Speed_icon.png,
+A tracking system should record the distance traveled in trip mode B.,Trip B - Distance,Square,100x100,blue,,,main_content_zone,,Trip B - Distance_icon.png,
+An element should display fuel efficiency for trip B.,Trip B - Mileage,Square,100x100,blue,,,main_content_zone,,Trip B - Mileage_icon.png,
+The system should log the duration of trip B.,Trip B - Time,Square,100x100,blue,,,main_content_zone,,Trip B - Time_icon.png,
+An indicator should display the average speed for trip B.,Trip B - Avg. Speed,Square,100x100,blue,,,main_content_zone,,Trip B - Avg. Speed_icon.png,
+The system should indicate the estimated distance that can be traveled with the remaining fuel or charge.,Cruising range,rectangular,100x100,black,,,main_content_zone,,Cruising range_icon.png,
+A visual representation should show the estimated electric driving range.,Electric range display,rectangular,150x300,black,,,footer_zone,,Electric range display_icon.png,
+The interface should present real-time fuel consumption data.,Instantaneous fuel consumption display,rectangular,150x300,black,,,footer_zone,".Instantaneous-Fuel-Consumption-Display  {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background: white;
+  margin: 20px;
+}
+
+.gauge-arc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 80px;
+  background: black;
+  transform-origin: bottom center;
+  transform: rotate(45deg); /* Needle angle can be dynamically updated */
+}
+
+.labels {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  font-size: 20px;
+  font-weight: bold;
+}",Instantaneous fuel consumption display_icon.png,
+A calculated value should reflect the average fuel efficiency over a trip or period.,Average fuel consumption,Square,150x300,black,,,footer_zone,,Average fuel consumption_icon.png,
+The system should display real-time power usage data.,Instantaneous power consumption,rectangular,150x300,black,,,footer_zone,,Instantaneous power consumption_icon.png,
+A calculated value should indicate the average power consumption over time.,Average power consumption,rectangular,150x300,black,,,footer_zone,,Average power consumption_icon.png,
+A set of static indicators should be available to convey vehicle status.,QM Telltales - Static Slot (30 Telltales),rectangular,50x50 ,black,,,main_content_zone,,QM Telltales - Static Slot (30 Telltales)_icon.png,
+A set of dynamic slots should accommodate multiple telltale indicators.,"QM Telltales - Sharable Slot (30 Telltales, 10 Slots)",rectangular,50x150,black,,,main_content_zone,,"QM Telltales - Sharable Slot (30 Telltales, 10 Slots)_icon.png",
+A specialized set of indicators should display critical safety-related information.,ASIL-B Telltales (10 TT),Square,50x50 ,black,,,main_content_zone,,ASIL-B Telltales (10 TT)_icon.png,
+A function should validate the operability of all telltale indicators.,Telltale Self Test,rectangular,200x400,black,,,main_content_zone,,Telltale Self Test_icon.png,
+Visual notifications should appear without text for immediate recognition.,Static Popup/Alert  -  Icon only   (50 Alerts),rectangular,100x100 ,grey,,,header_zone,,Static Popup/Alert  -  Icon only   (50 Alerts)_icon.png,
+Alert messages should be conveyed using both icons and text.,Static Popup/Alert  - Icon + Text (50 Alerts),rectangular,150x300 ,grey,,,header_zone,,Static Popup/Alert  - Icon + Text (50 Alerts)_icon.png,
+Important notifications should be displayed using text alone.,Static Popup/Alert  -  Text only   (50 Alerts),rectangular,100x300 ,blue,,,header_zone,,Static Popup/Alert  -  Text only   (50 Alerts)_icon.png,
+The system should provide animated or temporary notifications for user awareness.,Dynamic Popup/Alert  (25 Alerts),rectangular,200x400 ,black,,,main_content_zone,,Dynamic Popup/Alert  (25 Alerts)_icon.png,
+The interface should support multiple information zones for distinct categories.,"Multi Zone display (Left, Right & Top)",rectangular,300x500 ,black,,,main_content_zone,,"Multi Zone display (Left, Right & Top)_icon.png",
+The media interface should display the title of the currently playing track.,Current Track name,rectangular,150x300 ,blue,,,main_content_zone,,Current Track name_icon.png,
+A timer should indicate the elapsed or remaining duration of the track.,Current Track time,rectangular,150x300 ,blue,,,main_content_zone,,Current Track time_icon.png,
+The media system should visually represent the active audio source and album artwork.,Source Icons & Album art image,rectangular,150x300 ,grey,,,main_content_zone,,Source Icons & Album art image_icon.png,
+An indicator should reflect the current audio volume level.,Volume,rectangular,100x300,grey,,,navigation_zone,"{
+  ""volume-icon"": {
+    ""position"": ""relative"",
+    ""width"": ""0"",
+    ""height"": ""0"",
+    ""borderTop"": ""25px solid transparent"",
+    ""borderBottom"": ""25px solid transparent"",
+    ""borderLeft"": ""40px solid black"",
+    ""marginLeft"": ""10px""
+  },
+  ""speaker-body"": {
+    ""position"": ""absolute"",
+    ""top"": ""10px"",
+    ""left"": ""-30px"",
+    ""width"": ""20px"",
+    ""height"": ""30px"",
+    ""backgroundColor"": ""black""
+  },
+  ""wave1"": {
+    ""position"": ""absolute"",
+    ""top"": ""8px"",
+    ""left"": ""50px"",
+    ""width"": ""15px"",
+    ""height"": ""15px"",
+    ""border"": ""4px solid black"",
+    ""borderRadius"": ""50%"",
+    ""borderLeft"": ""none"",
+    ""borderBottom"": ""none"",
+    ""transform"": ""rotate(45deg)""
+  },
+  ""wave2"": {
+    ""position"": ""absolute"",
+    ""top"": ""0px"",
+    ""left"": ""70px"",
+    ""width"": ""25px"",
+    ""height"": ""25px"",
+    ""border"": ""4px solid black"",
+    ""borderRadius"": ""50%"",
+    ""borderLeft"": ""none"",
+    ""borderBottom"": ""none"",
+    ""transform"": ""rotate(45deg)""
+  },
+  ""wave3"": {
+    ""position"": ""absolute"",
+    ""top"": ""-10px"",
+    ""left"": ""95px"",
+    ""width"": ""35px"",
+    ""height"": ""35px"",
+    ""border"": ""4px solid black"",
+    ""borderRadius"": ""50%"",
+    ""borderLeft"": ""none"",
+    ""borderBottom"": ""none"",
+    ""transform"": ""rotate(45deg)""
+  }
+}",Volume_icon.png,
+A list of available media files should be accessible for selection.,Media list,rectangular,400x300,black,,,navigation_zone,,Media list_icon.png,
+"The radio interface should show the station name, RDS info, and frequency.","Current Radio name, RDS, Freq",rectangular,400x300,black,,,main_content_zone,".radio-signal {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Central circle (signal source) */
+.radio-signal .center-dot {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+/* Antenna legs */
+.radio-signal .leg {
+  width: 10px;
+  height: 60px;
+  background-color: black;
+  position: absolute;
+  bottom: 10px;
+  transform-origin: top center;
+}
+
+.radio-signal .left-leg {
+  transform: rotate(-25deg);
+  left: 35%;
+}
+
+.radio-signal .right-leg {
+  transform: rotate(25deg);
+  right: 35%;
+}
+
+/* Signal waves */
+.radio-signal .wave {
+  position: absolute;
+  border: 4px solid black;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  background: none;
+}
+
+.radio-signal .wave1 {
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  left: 30px;
+}
+
+.radio-signal .wave2 {
+  width: 60px;
+  height: 60px;
+  top: 0px;
+  left: 20px;
+}","Current Radio name, RDS, Freq_icon.png",
+A graphical element should indicate the current radio source.,Radio Source icon,circular,200x200,black,,,main_content_zone,".radio-signal {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Central circle (signal source) */
+.radio-signal .center-dot {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+/* Antenna legs */
+.radio-signal .leg {
+  width: 10px;
+  height: 60px;
+  background-color: black;
+  position: absolute;
+  bottom: 10px;
+  transform-origin: top center;
+}
+
+.radio-signal .left-leg {
+  transform: rotate(-25deg);
+  left: 35%;
+}
+
+.radio-signal .right-leg {
+  transform: rotate(25deg);
+  right: 35%;
+}
+
+/* Signal waves */
+.radio-signal .wave {
+  position: absolute;
+  border: 4px solid black;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  background: none;
+}
+
+.radio-signal .wave1 {
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  left: 30px;
+}
+
+.radio-signal .wave2 {
+  width: 60px;
+  height: 60px;
+  top: 0px;
+  left: 20px;
+}",Radio Source icon_icon.png,
+A list of available radio stations should be displayed for selection.,Radio List & Selection of track,Square,400x400,black,,,main_content_zone,,Radio List & Selection of track_icon.png,
+An interface element should indicate an active phone call.,Ongoing Call,Square,400x400,black,,,main_content_zone,,Ongoing Call_icon.png,
+A notification should inform the user of missed calls.,Missed call,Square,400x400,black,,,main_content_zone,"{
+  ""/* Container for the missed call icon */"": {},
+  "".missed-call-icon"": {
+    ""width"": ""64px"",
+    ""height"": ""64px"",
+    ""display"": ""flex"",
+    ""justify-content"": ""center"",
+    ""align-items"": ""center"",
+    ""border"": ""2px solid black"",      /* Icon border */
+    ""border-radius"": ""12px"",          /* Rounded edges */
+    ""background-color"": ""white"",      /* Icon background */
+    ""box-shadow"": ""2px 2px 6px rgba(0, 0, 0, 0.2)"" /* Subtle shadow */
+  },
+
+  ""/* Actual image inside the icon container */"": {},
+  "".missed-call-icon .icon"": {
+    ""width"": ""100%"",
+    ""height"": ""100%"",
+    ""object-fit"": ""contain"",
+    ""filter"": ""invert(0%)""            /* Keeps icon black on white bg */
+  }
+}",Missed call_icon.png,
+An alert should notify the user of an incoming call.,Incoming call,Square,400x400,black,,,main_content_zone,"{
+  ""/* Container for the incoming call icon */"": {},
+  "".incoming-call-icon"": {
+    ""width"": ""64px"",
+    ""height"": ""64px"",
+    ""display"": ""flex"",
+    ""justify-content"": ""center"",
+    ""align-items"": ""center"",
+    ""border"": ""2px solid black"",      /* Icon border */
+    ""border-radius"": ""12px"",          /* Rounded edges */
+    ""background-color"": ""white"",      /* Icon background */
+    ""box-shadow"": ""2px 2px 6px rgba(0, 0, 0, 0.2)"" /* Subtle shadow */
+  },
+
+  ""/* Actual image inside the icon container */"": {},
+  "".incoming-call-icon .icon"": {
+    ""width"": ""100%"",
+    ""height"": ""100%"",
+    ""object-fit"": ""contain"",
+    ""filter"": ""invert(0%)""            /* Keeps icon black on white bg */
+  }
+}",Incoming call_icon.png,
+The system should indicate when multiple callers are in a session.,Conferrence call,Square,400x400,black,,,main_content_zone,".conference-call {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: white;
+}
+
+/* Central user (bottom circle) */
+.conference-call .user-center {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Central user's shoulders */
+.conference-call .shoulders-center {
+  width: 60px;
+  height: 20px;
+  background-color: black;
+  border-radius: 10px / 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Top-left user circle */
+.conference-call .user-left {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* Top-left user shoulders */
+.conference-call .shoulders-left {
+  width: 40px;
+  height: 12px;
+  background-color: black;
+  border-radius: 10px / 4px;
+  position: absolute;
+  top: 25px;
+  left: 2px;
+}
+
+/* Top-right user circle */
+.conference-call .user-right {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Top-right user shoulders */
+.conference-call .shoulders-right {
+  width: 40px;
+  height: 12px;
+  background-color: black;
+  border-radius: 10px / 4px;
+  position: absolute;
+  top: 25px;
+  right: 2px;
+}",Conferrence call_icon.png,
+"Users should be able to view contacts, call logs, and initiate calls.","Phone Book list, Missed call list & Call initiation",rectangular,400x300,black,,,main_content_zone,,"Phone Book list, Missed call list & Call initiation_icon.png",
+The system should provide real-time navigation map updates synchronized with vehicle movement.,Navigation map projection & sync,Square,400x400,black,,,main_content_zone,"{
+  ""component"": ""NavigationMapSyncIcon"",
+  ""style"": {
+    ""position"": ""relative"",
+    ""width"": ""120px"",
+    ""height"": ""120px"",
+    ""borderRadius"": ""50%"",
+    ""border"": ""4px solid black"",
+    ""boxSizing"": ""border-box"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""center"",
+    ""backgroundColor"": ""white""
+  },
+  ""elements"": {
+    ""compass-needle"": {
+      ""position"": ""absolute"",
+      ""width"": ""4px"",
+      ""height"": ""60px"",
+      ""backgroundColor"": ""black"",
+      ""transformOrigin"": ""bottom center"",
+      ""transform"": ""rotate(45deg)""
+    },
+    ""sync-arrow1"": {
+      ""position"": ""absolute"",
+      ""top"": ""20px"",
+      ""left"": ""20px"",
+      ""width"": ""0"",
+      ""height"": ""0"",
+      ""borderTop"": ""10px solid transparent"",
+      ""borderBottom"": ""10px solid transparent"",
+      ""borderLeft"": ""15px solid black"",
+      ""transform"": ""rotate(45deg)""
+    },
+    ""sync-arrow2"": {
+      ""position"": ""absolute"",
+      ""bottom"": ""20px"",
+      ""right"": ""20px"",
+      ""width"": ""0"",
+      ""height"": ""0"",
+      ""borderTop"": ""10px solid transparent"",
+      ""borderBottom"": ""10px solid transparent"",
+      ""borderRight"": ""15px solid black"",
+      ""transform"": ""rotate(-135deg)""
+    }
+  }
+}",Navigation map projection & sync_icon.png,
+Turn-by-turn navigation icons should be displayed for route guidance.,TBT icons,Square,100x100,black,,,main_content_zone,,TBT icons_icon.png,
+Users should be able to browse and select destinations from a list.,Destination list & selection,rectangular,200x400,black,,,main_content_zone,,Destination list & selection_icon.png,
+The interface should support multiple language options for accessibility.,Language,Square,100x300,black,,,main_content_zone,,Language_icon.png,
+Measurement units should be configurable based on user preference.,Unit,Square,100x300,black,,,main_content_zone,,Unit_icon.png,
+Users should be able to view and switch between different driving modes.,Drive mode,circular,200x200,black,,,main_content_zone,,Drive mode_icon.png,
+A navigation menu should provide access to various system features.,Menu Bar,rectangular,80x300,black,,,navigation_zone,,Menu Bar_icon.png,
+The system should provide a structured menu for configuration at the primary level.,notification_zone - Level 1,Square,300x500,black,,,navigation_zone,,notification_zone - Level 1_icon.png,
+Users should be able to access deeper configuration options beyond the primary menu.,notification_zone - Level 2,Square,300x500,black,,,navigation_zone,,notification_zone - Level 2_icon.png,
+Advanced settings should be available for specific feature customization.,notification_zone - Level 3,Square,300x500,black,,,navigation_zone,,notification_zone - Level 3_icon.png,
+An additional layer of settings should be accessible for fine-tuning system functions.,notification_zone - Level 4,Square,300x500,black,,,navigation_zone,,notification_zone - Level 4_icon.png,
+A display should indicate the status of adaptive cruise control.,Adaptive Cruise Control,rectangular,150x300,black,,,navigation_zone,,Adaptive Cruise Control_icon.png,
+The system should provide alerts for potential forward collisions.,Forward Collision Warning Indication,Square,150x150,black,,,main_content_zone,".fcw-icon {
+  position: relative;
+  width: 120px;
+  height: 80px;
+}
+
+/* Car shape */
+.car {
+  width: 60px;
+  height: 30px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 25px;
+}
+
+/* Warning lines (simulating radar or alert effect) */
+.warning-lines .line {
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  left: 70px;
+  top: 36px;
+}
+
+.warning-lines .one { transform: rotate(0deg) translateX(0); top: 26px; left: 70px; }
+.warning-lines .two { transform: rotate(10deg) translateX(0); top: 36px; left: 75px; }
+.warning-lines .three { transform: rotate(20deg) translateX(0); top: 46px; left: 80px; }
+
+/* Impact burst or triangle warning */
+.impact {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid red;
+  left: 95px;
+  top: 30px;
+}",Forward Collision Warning Indication_icon.png,
+A visual cue should indicate the presence of a vehicle in the blind spot.,Blind Spot Indication,rectangular,150x300,black,,,main_content_zone,"{
+  ""/* Container for the blind spot indication icon */"": {},
+  "".blind-spot-icon"": {
+    ""width"": ""64px"",
+    ""height"": ""64px"",
+    ""display"": ""flex"",
+    ""justify-content"": ""center"",
+    ""align-items"": ""center"",
+    ""border"": ""2px solid black"",      /* Icon border */
+    ""border-radius"": ""12px"",          /* Rounded edges */
+    ""background-color"": ""white"",      /* Icon background */
+    ""box-shadow"": ""2px 2px 6px rgba(0, 0, 0, 0.2)"" /* Subtle shadow */
+  },
+
+  ""/* Actual image inside the icon container */"": {},
+  "".blind-spot-icon .icon"": {
+    ""width"": ""100%"",
+    ""height"": ""100%"",
+    ""object-fit"": ""contain"",
+    ""filter"": ""invert(0%)""            /* Keeps icon black on white bg */
+  }
+}",Blind Spot Indication_icon.png,
+The interface should depict multiple lanes for better navigation and awareness.,Multilane highway display,rectangular,300x500,black,,,main_content_zone,,Multilane highway display_icon.png,
+The system should indicate when lane-keeping assistance is active.,Lane Keep Assist,rectangular,150x300,black,,,main_content_zone,"{
+  ""component"": ""LaneKeepAssistIcon"",
+  ""style"": {
+    ""position"": ""relative"",
+    ""width"": ""120px"",
+    ""height"": ""120px"",
+    ""backgroundColor"": ""white"",
+    ""display"": ""flex"",
+    ""justifyContent"": ""center"",
+    ""alignItems"": ""center""
+  },
+  ""elements"": {
+    ""center-lane"": {
+      ""position"": ""absolute"",
+      ""width"": ""4px"",
+      ""height"": ""100%"",
+      ""backgroundColor"": ""black""
+    },
+    ""left-lane"": {
+      ""position"": ""absolute"",
+      ""left"": ""30px"",
+      ""width"": ""4px"",
+      ""height"": ""100%"",
+      ""backgroundColor"": ""black"",
+      ""transform"": ""skewY(10deg)""
+    },
+    ""right-lane"": {
+      ""position"": ""absolute"",
+      ""right"": ""30px"",
+      ""width"": ""4px"",
+      ""height"": ""100%"",
+      ""backgroundColor"": ""black"",
+      ""transform"": ""skewY(-10deg)""
+    },
+    ""car"": {
+      ""position"": ""absolute"",
+      ""width"": ""30px"",
+      ""height"": ""40px"",
+      ""border"": ""4px solid black"",
+      ""borderRadius"": ""8px"",
+      ""backgroundColor"": ""white""
+    }
+  }
+}",Lane Keep Assist_icon.png,
+A display should notify the user when lane change assistance is engaged.,Lane Change Assist,rectangular,150x300,black,,,main_content_zone,"{
+  ""/* Container for the lane change assist icon */"": {},
+  "".lane-change-icon"": {
+    ""width"": ""64px"",
+    ""height"": ""64px"",
+    ""display"": ""flex"",
+    ""justify-content"": ""center"",
+    ""align-items"": ""center"",
+    ""border"": ""2px solid black"",      /* Icon border */
+    ""border-radius"": ""12px"",          /* Rounded edges */
+    ""background-color"": ""white"",      /* Icon background */
+    ""box-shadow"": ""2px 2px 6px rgba(0, 0, 0, 0.2)"" /* Subtle shadow */
+  },
+
+  ""/* Actual image inside the icon container */"": {},
+  "".lane-change-icon .icon"": {
+    ""width"": ""100%"",
+    ""height"": ""100%"",
+    ""object-fit"": ""contain"",
+    ""filter"": ""invert(0%)""            /* Keeps icon black on white bg */
+  }
+}",Lane Change Assist_icon.png,
+The interface should provide alerts when unintended lane departures occur.,Lane Departure Function Display,rectangular,150x300,black,,,main_content_zone,,Lane Departure Function Display_icon.png,
+A system should monitor driver attentiveness and provide alerts when needed.,Driver Attention Assistance Alerts,rectangular,150x300,black,,,main_content_zone,,Driver Attention Assistance Alerts_icon.png,
+An alert should indicate when autonomous emergency braking is engaged.,Autonomous Emergency Braking System,rectangular,150x300,black,,,main_content_zone,".aeb-telltale {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 2px solid black; /* Outer circle border */
+  border-radius: 50%; /* Circular shape */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Car shape */
+.aeb-telltale .car {
+  width: 20px;
+  height: 14px;
+  background-color: black;
+  position: relative;
+  border-radius: 2px;
+}
+
+/* Car roof */
+.aeb-telltale .car::before {
+  content: """";
+  position: absolute;
+  top: -6px;
+  left: 3px;
+  width: 14px;
+  height: 6px;
+  background-color: black;
+  border-radius: 2px 2px 0 0;
+}
+
+/* Car wheels */
+.aeb-telltale .wheel-left,
+.aeb-telltale .wheel-right {
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -4px;
+}
+
+.aeb-telltale .wheel-left {
+  left: 2px;
+}
+
+.aeb-telltale .wheel-right {
+  right: 2px;
+}
+
+/* Alert lines */
+.aeb-telltale .alert-left,
+.aeb-telltale .alert-right {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: red;
+  top: 15%;
+}
+
+.aeb-telltale .alert-left {
+  left: -12px;
+  transform: rotate(-30deg);
+}
+
+.aeb-telltale .alert-right {
+  right: -12px;
+  transform: rotate(30deg);
+}",Autonomous Emergency Braking System_icon.png,
+A visual indicator should confirm the activation of the defrosting system.,Window defrost indication,Square,100x100,black,,,main_content_zone,"{
+  ""window-defrost-icon"": {
+    ""position"": ""relative"",
+    ""width"": ""60px"",
+    ""height"": ""40px"",
+    ""borderTop"": ""6px solid black"",
+    ""borderLeft"": ""6px solid black"",
+    ""borderRight"": ""6px solid black"",
+    ""borderRadius"": ""0 0 60px 60px"",
+    ""overflow"": ""hidden"",
+    ""backgroundColor"": ""transparent""
+  },
+  ""defrost-arrow"": {
+    ""position"": ""absolute"",
+    ""bottom"": ""8px"",
+    ""left"": ""50%"",
+    ""width"": ""10px"",
+    ""height"": ""20px"",
+    ""backgroundColor"": ""black"",
+    ""transform"": ""translateX(-50%) rotate(-30deg)""
+  },
+  ""defrost-arrow::before"": {
+    ""content"": ""''"",
+    ""position"": ""absolute"",
+    ""top"": ""-6px"",
+    ""left"": ""-5px"",
+    ""width"": ""0"",
+    ""height"": ""0"",
+    ""borderLeft"": ""10px solid transparent"",
+    ""borderRight"": ""10px solid transparent"",
+    ""borderBottom"": ""10px solid black""
+  },
+  ""defrost-arrow-1"": {
+    ""left"": ""20%""
+  },
+  ""defrost-arrow-2"": {
+    ""left"": ""50%""
+  },
+  ""defrost-arrow-3"": {
+    ""left"": ""80%""
+  }
+}",Window defrost indication_icon.png,
+A warning should appear when brake lining wear is detected.,Brake lining indication,Square,100x100,black,,,main_content_zone,"{
+  ""/* Container for the brake lining indication icon */"": {},
+  "".brake-indicator-icon"": {
+    ""width"": ""64px"",
+    ""height"": ""64px"",
+    ""display"": ""flex"",
+    ""justify-content"": ""center"",
+    ""align-items"": ""center"",
+    ""border"": ""2px solid black"",      /* Icon border */
+    ""border-radius"": ""12px"",          /* Rounded edges */
+    ""background-color"": ""white"",      /* Icon background */
+    ""box-shadow"": ""2px 2px 6px rgba(0, 0, 0, 0.2)"" /* Subtle shadow */
+  },
+
+  ""/* Actual image inside the icon container */"": {},
+  "".brake-indicator-icon .icon"": {
+    ""width"": ""100%"",
+    ""height"": ""100%"",
+    ""object-fit"": ""contain"",
+    ""filter"": ""invert(0%)""            /* Keeps icon black on white bg */
+  }
+}",Brake lining indication_icon.png,
+The interface should allow users to set and view adaptive cruise control speed.,ACC Speed setting,Square,100x100,black,,,main_content_zone,,ACC Speed setting_icon.png,
+The system should provide a visual representation of detected objects on road lanes.,Objects display on lanes,rectangular,300x500,black,,,main_content_zone,,Objects display on lanes_icon.png,
+Curved lane markings should be displayed dynamically for better navigation.,Lane with curve,rectangular,300x500,black,,,main_content_zone,,Lane with curve_icon.png,
+A visual indicator should represent the Trailer Sway Assist system status.,TSA,rectangular,150x300,black,,,main_content_zone,,TSA_icon.png,
+The system should display active Automatic Parking Assist functionality.,APA,rectangular,150x300,black,,,main_content_zone,,APA_icon.png,
+Users should have the option to select from multiple 2D theme colors.,Multi color Themes (2D),rectangular,300x500,black,,,navigation_zone,,Multi color Themes (2D)_icon.png,
+The system should support a variety of 3D theme color options.,Multi color Themes (3D),rectangular,300x500,black,,,navigation_zone,,Multi color Themes (3D)_icon.png,
+Themes should automatically switch based on selected drive modes.,Drive mode based theme switch (3 Drive modes),Square,100x100,black,,,navigation_zone,,Drive mode based theme switch (3 Drive modes)_icon.png,
+The display should automatically adjust based on ambient lighting conditions.,Day &Night mode,Square,100x100,black,,,navigation_zone,".day-night-icon {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  border: 10px solid black; /* Outer sun ring */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Moon shape - black crescent */
+.day-night-icon::before {
+  content: """";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border-radius: 50%;
+  left: 30px;
+  top: 30px;
+  z-index: 1;
+}
+
+.day-night-icon::after {
+  content: """";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  left: 40px;
+  top: 30px;
+  z-index: 2;
+}
+
+/* Sun rays */
+.sun-ray {
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  background-color: black;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: center bottom;
+}
+
+.sun-ray:nth-child(2) { transform: rotate(45deg) translateX(-50%); top: 10%; left: 80%; }
+.sun-ray:nth-child(3) { transform: rotate(90deg) translateX(-50%); top: 50%; left: 100%; }
+.sun-ray:nth-child(4) { transform: rotate(135deg) translateX(-50%); top: 80%; left: 80%; }
+.sun-ray:nth-child(5) { transform: rotate(180deg) translateX(-50%); top: 100%; left: 50%; }
+.sun-ray:nth-child(6) { transform: rotate(225deg) translateX(-50%); top: 80%; left: 20%; }
+.sun-ray:nth-child(7) { transform: rotate(270deg) translateX(-50%); top: 50%; left: 0%; }
+.sun-ray:nth-child(8) { transform: rotate(315deg) translateX(-50%); top: 10%; left: 20%; }",Day &Night mode_icon.png,
+Users should be able to download and apply new themes.,Downloadable theme,Square,100x100,black,,,navigation_zone,,Downloadable theme_icon.png,
+A graphical element should indicate directional orientation.,Compass,circular,300x300,black,,,main_content_zone,".compass {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: white;
+  border: 6px solid black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Outer Ring */
+.compass::before {
+  content: """";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border: 4px solid dimgray;
+  box-sizing: border-box;
+}
+
+/* Direction Labels */
+.direction {
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.direction.n { top: 8px; left: 50%; transform: translateX(-50%); }
+.direction.s { bottom: 8px; left: 50%; transform: translateX(-50%); }
+.direction.e { right: 8px; top: 50%; transform: translateY(-50%); }
+.direction.w { left: 8px; top: 50%; transform: translateY(-50%); }
+
+/* Needles */
+.needle {
+  position: absolute;
+  width: 4px;
+  height: 45%;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+}
+
+.needle.n { transform: translate(-50%, -100%) rotate(0deg); background-color: white; }
+.needle.s { transform: translate(-50%, -100%) rotate(180deg); }
+.needle.e { transform: translate(-50%, -100%) rotate(90deg); background-color: white; }
+.needle.w { transform: translate(-50%, -100%) rotate(-90deg); }",Compass_icon.png,
+The interface should display date-related information.,Calender,Square,300x300,black,,,main_content_zone,".calendar {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 16px;
+  position: relative;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+/* Top binding section (header area) */
+.calendar::before {
+  content: """";
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Top rings */
+.calendar .ring {
+  width: 16px;
+  height: 24px;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+}
+
+.calendar .ring.left {
+  left: 40px;
+}
+
+.calendar .ring.right {
+  right: 40px;
+}
+
+/* Date grid */
+.calendar .grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+  padding: 16px;
+}
+
+.calendar .grid .day {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: black;
+  border-radius: 4px;
+}",Calender_icon.png,
+A visual representation should indicate real-time G-force exertion.,G-Force,circular,300x300,black,,,main_content_zone,,G-Force_icon.png,
+The system should support multiple non-Arabic language options.,Languages (Non Arabic),rectangular,150x300,black,,,navigation_zone,"{
+  ""component"": ""LanguagesIcon"",
+  ""style"": {
+    ""position"": ""relative"",
+    ""width"": ""120px"",
+    ""height"": ""80px"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""space-between"",
+    ""backgroundColor"": ""white""
+  },
+  ""elements"": {
+    ""left-bubble"": {
+      ""position"": ""relative"",
+      ""width"": ""50px"",
+      ""height"": ""50px"",
+      ""border"": ""4px solid black"",
+      ""borderRadius"": ""8px"",
+      ""display"": ""flex"",
+      ""alignItems"": ""center"",
+      ""justifyContent"": ""center"",
+      ""fontWeight"": ""bold"",
+      ""fontSize"": ""24px"",
+      ""content"": ""'A'""
+    },
+    ""right-bubble"": {
+      ""position"": ""relative"",
+      ""width"": ""60px"",
+      ""height"": ""60px"",
+      ""border"": ""4px solid black"",
+      ""borderRadius"": ""8px"",
+      ""display"": ""flex"",
+      ""alignItems"": ""center"",
+      ""justifyContent"": ""center"",
+      ""fontWeight"": ""bold"",
+      ""fontSize"": ""24px"",
+      ""content"": ""'?'""
+    },
+    ""arrow"": {
+      ""position"": ""absolute"",
+      ""bottom"": ""-12px"",
+      ""left"": ""48px"",
+      ""width"": ""20px"",
+      ""height"": ""20px"",
+      ""borderLeft"": ""4px solid black"",
+      ""borderBottom"": ""4px solid black"",
+      ""transform"": ""rotate(-45deg)""
+    }
+  }
+}",Languages (Non Arabic)_icon.png,
+The system should support Arabic language options.,Languages (Arabic),rectangular,150x300,black,,,navigation_zone,"{
+  ""component"": ""LanguagesIcon"",
+  ""style"": {
+    ""position"": ""relative"",
+    ""width"": ""120px"",
+    ""height"": ""80px"",
+    ""display"": ""flex"",
+    ""alignItems"": ""center"",
+    ""justifyContent"": ""space-between"",
+    ""backgroundColor"": ""white""
+  },
+  ""elements"": {
+    ""left-bubble"": {
+      ""position"": ""relative"",
+      ""width"": ""50px"",
+      ""height"": ""50px"",
+      ""border"": ""4px solid black"",
+      ""borderRadius"": ""8px"",
+      ""display"": ""flex"",
+      ""alignItems"": ""center"",
+      ""justifyContent"": ""center"",
+      ""fontWeight"": ""bold"",
+      ""fontSize"": ""24px"",
+      ""content"": ""'A'""
+    },
+    ""right-bubble"": {
+      ""position"": ""relative"",
+      ""width"": ""60px"",
+      ""height"": ""60px"",
+      ""border"": ""4px solid black"",
+      ""borderRadius"": ""8px"",
+      ""display"": ""flex"",
+      ""alignItems"": ""center"",
+      ""justifyContent"": ""center"",
+      ""fontWeight"": ""bold"",
+      ""fontSize"": ""24px"",
+      ""content"": ""'?'""
+    },
+    ""arrow"": {
+      ""position"": ""absolute"",
+      ""bottom"": ""-12px"",
+      ""left"": ""48px"",
+      ""width"": ""20px"",
+      ""height"": ""20px"",
+      ""borderLeft"": ""4px solid black"",
+      ""borderBottom"": ""4px solid black"",
+      ""transform"": ""rotate(-45deg)""
+    }
+  }
+}",Languages (Arabic)_icon.png,
+A self-check should be available to verify display functionality.,Display Test,rectangular,200x400,black,,,navigation_zone,,Display Test_icon.png,
+The system should ensure synchronization between alerts and chime sounds.,Chime sync,rectangular,200x400,black,,,navigation_zone,,Chime sync_icon.png,
+The system should accommodate additional vehicle variants.,Variant Handling (additionally 1 variant),rectangular,200x400,black,,,navigation_zone,,Variant Handling (additionally 1 variant)_icon.png,
+The interface should reflect system states dynamically based on conditions.,State machine,Square,200x400,black,,,header_zone,,State machine_icon.png,
+An engaging startup animation should appear upon system activation.,Welcome/Startup Animation,rectangular,300x500,black,,,main_content_zone,,Welcome/Startup Animation_icon.png,
+A visual sequence should indicate system shutdown.,Shutdown/Goodbye animation,rectangular,300x500,black,,,main_content_zone,,Shutdown/Goodbye animation_icon.png,
+Animated transitions should enhance menu navigation.,List Animations,Square,300x300,black,,,main_content_zone,,List Animations_icon.png,
+Smooth transitions should be applied between different screens.,Screen Transistion animation,rectangular,300x500,black,,,main_content_zone,,Screen Transistion animation_icon.png,
+An animation should indicate ignition activation or deactivation.,Ign on/off animation,circular,300x300,black,,,main_content_zone,,Ign on/off animation_icon.png,
+The system should display a smooth and responsive gear animation whenever the gear is shifted.,Gear Animation,rectangular,200x400,black,,,main_content_zone,,Gear Animation_icon.png,
+"The animation should visually represent the transition between gears, ensuring that users can easily understand the current gear position while maintaining a seamless user experience.",Gear Animation,rectangular,200x400,black,,,main_content_zone,,Gear Animation_icon.png,
+The fuel gauge shall update dynamically based on sensor data from the fuel tank.,Fuel,circular,150x150,black,,,header_zone,".fuel-wrapper { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 280px; 
+  margin: auto; 
+} 
+ 
+.fuel-gauge { 
+  position: relative; 
+  width: 250px; 
+  height: 130px; 
+  border-top-left-radius: 125px; 
+  border-top-right-radius: 125px; 
+  background: transparent; 
+  overflow: visible; 
+} 
+ 
+.ticks { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+} 
+ 
+.tick { 
+  width: 3px; 
+  height: 20px; 
+  background-color: #333; 
+  position: absolute; 
+  top: 0; 
+  left: 50%; 
+  transform-origin: center bottom; 
+} 
+ 
+.needle { 
+  width: 4px; 
+  height: 100px; 
+  background-color: #c40000; 
+  position: absolute; 
+  bottom: 0; 
+  left: 50%; 
+  transform-origin: bottom center; 
+  transition: transform 0.4s ease-in-out; 
+} 
+ 
+.center-dot { 
+  width: 20px; 
+  height: 20px; 
+  background-color: #333; 
+  border-radius: 50%; 
+  position: absolute; 
+  bottom: 0; 
+  left: calc(50% - 10px); 
+} 
+ 
+.label { 
+  position: absolute; 
+  font-weight: bold; 
+  font-size: 20px; 
+} 
+ 
+.e-label { 
+  bottom: 0; 
+  left: 10px; 
+  color: #b30000; 
+} 
+ 
+.f-label { 
+  bottom: 0; 
+  right: 10px; 
+  color: #333; 
+} 
+ 
+.fuel-icon { 
+  font-size: 20px; 
+  position: absolute; 
+  top: 35px; 
+  left: 50%; 
+ ",Fuel_icon.png,
+The infotainment UI must provide a real-time video feed from the rear and surround cameras with a minimum resolution,camera ,circular,500x500,,,,main_content_zone,,,
+"The infotainment system must display current weather conditions including temperature, humidity, and precipitation.",Weather,circular,300x300,,,,header_zone,,,
+"The infotainment UI must include a dedicated section to display active warning lamps such as engine, tire pressure, or battery alerts",Warning lamps,Square,300x300,,,,header_zone,,,
+"The infotainment UI must display the outside temperature in a consistent location, preferably near the clock or speedometer.",Temperature,Square,300x300,,,,footer_zone,,,
+"The system must allow users to browse, preview, and play media files (images and videos) stored locally or on connected devices.",Gallery,Square,300x300,,,,main_content_zone,,,
+"The infotainment UI must include a centralized settings menu to configure system, audio, display, and connectivity options",Settings,Square,300x300,,,,navigation_zone,,,
+"The UI must display the vehicle�s current status, such as fuel level, battery charge, and system readiness, in a summarized view.",Status,circular,300x300,,,,main_content_zone,,,
+"The infotainment system must include a notification center to list recent alerts, messages, and updates",Notifications,rectangular,100x500,,,,header_zone,,,
+The UI should automatically switch to the rear camera view when the reverse gear is engaged.,camera ,circular,500x500,,,,main_content_zone,,,
+The weather component should update in real-time based on the vehicle�s GPS location.,Weather,circular,300x300,,,,header_zone,,,
+The warning lamp icons should remain visible or blink until the issue is resolved or acknowledged by the user.,Warning lamps,Square,300x300,,,,footer_zone,,,
+"The temperature display should adapt its color or theme to reflect extreme weather conditions (e.g., red for hot, blue for cold).",Temperature,Square,300x300,,,,footer_zone,,,
+The gallery should disable interaction while the vehicle is in motion to avoid driver distraction.,Gallery,Square,300x300,,,,main_content_zone,,,
+"Frequently used settings (e.g., Bluetooth, brightness) should be accessible with fewer taps or via a quick access menu.",Settings,Square,300x300,,,,navigation_zone,,,
+"Status indicators should use color-coded icons to signal normal (green), caution (yellow), or critical (red) conditions",Status,circular,300x300,,,,main_content_zone,,,
+Notifications should appear non-intrusively and support quick dismissal or action,Notifications,rectangular,100x500,,,,header_zone,,,
+The infotainment UI must provide a scrollable news feed with headlines and brief summaries from trusted sources.,News feed ,rectangular,100x500,,,,main_content_zone,,,
+"The system must support playback of YouTube videos with basic controls like play, pause, seek, and volume adjustment.",YT Player,rectangular,300x600,,,,main_content_zone,,,
+The news feed content should automatically pause or become audio-only when the vehicle is in motion to reduce driver distraction.,News feed ,rectangular,100x500,,,,header_zone,,,
+The YouTube player interface should automatically switch to a minimal audio player layout when navigating away from the video screen,YT Player,rectangular,300x600,,,,main_content_zone,,,
+The infotainment UI must provide a real-time video feed from the rear and surround cameras with a minimum resolution,camera ,oval,400x400,,,,main_content_zone,,,
+"The infotainment system must display current weather conditions including temperature, humidity, and precipitation.",Weather,rectangular,100x300,,,,header_zone,,,
+"The system must allow users to browse, preview, and play media files (images and videos) stored locally or on connected devices.",Gallery,rectangular,300x600,,,,main_content_zone,,,
+"The UI must display the vehicle�s current status, such as fuel level, battery charge, and system readiness, in a summarized view.",Status,Square,300x300,,,,main_content_zone,,,
+"The UI must display the vehicle�s current status, such as fuel level, battery charge, and system readiness, in a summarized view.",Status,rectangular,100x300,,,,main_content_zone,,,
+"The infotainment system must include a notification center to list recent alerts, messages, and updates",Notifications,Square,300x300,,,,header_zone,,,
+The infotainment UI must provide a scrollable news feed with headlines and brief summaries from trusted sources.,News feed ,rectangular,100x500,,,,header_zone,,,
